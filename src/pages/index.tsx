@@ -20,7 +20,7 @@ export default function Home() {
         <title>Ali Zare CV</title>
         <meta name='description' content='Ali Zare CV' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.png' />
+        <link rel='icon' href='/dev-icon1.png' />
       </Head>
       <main className='p-4'>
         <Link
