@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@utils": ["src/tools/utils"],
+      "@components": ["src/components"],
+      "@enums" : ["src/tools/enums"]
+    }
+  }
+}

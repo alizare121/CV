@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 main {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/IRANSans.ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
+html[lang='fa'] {
+    span,
+    strong,
+    p {
+      font-family: 'IRANSans' !important;
+    }
+  }
