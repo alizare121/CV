@@ -14,13 +14,14 @@ export default function Home() {
   useEffect(onChangeLang, [router.locale]);
 
   const languageCheck: string = router?.locale === 'en' ? 'fa' : 'en';
+
   return (
     <>
       <Head>
         <title>Ali Zare CV</title>
         <meta name='description' content='Ali Zare CV' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/dev-icon1.png' />
+        <link rel='icon' href='/dev-icon2.png' />
       </Head>
       <main className='p-4'>
         <Link
