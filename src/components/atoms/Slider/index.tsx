@@ -8,37 +8,51 @@ export function Slider() {
             title: 'Development',
             icon: 'code',
             data: [
-                'JavaScript (ES6 & Beyond) ', 'TypeScript', 'React JS', 'React Native', 'Next js', 'State Management : Redux ,Context Api , MobX , Recoil', 'HTML/CSS', 'Bootstrap/Material-Ui/Ant Design/StyledComponents/tailwind', 'Test : Static Test (Flow ) , Unit Test (jest)'
+                'JavaScript (ES6 & Beyond) ',
+                'TypeScript',
+                'React JS',
+                'React Native',
+                'Next js',
+                'State Management : Redux ,Context Api , MobX , Recoil',
+                'HTML/CSS',
+                'Bootstrap/Material-Ui/Ant Design/StyledComponents/tailwind',
+                'Test : Static Test (Flow ) , Unit Test (jest)'
             ]
-
         },
         {
             id: 2,
             title: 'Tools',
             icon: 'wrench',
-            data: ['Git (Git Flow)', 'Firbase (Push Notification , Analytics , Crashlytics)', 'Update (CodePush)', 'Monitoring ( Sentry )', 'Documentation ( StoryBook )', 'Scrum methodology']
-
+            data: [
+                'Git (Git Flow)',
+                'Firbase (Push Notification , Analytics , Crashlytics)',
+                'Update (CodePush)',
+                'Monitoring ( Sentry )',
+                'Documentation ( StoryBook )',
+                'Scrum methodology'
+            ]
         },
         {
             id: 3,
             title: 'Network',
             icon: 'monitor',
             data: ['MikroTik', 'MCITP', 'Linux', 'Docker']
-
         },
         {
             id: 4,
             title: 'Soft Skills',
             icon: 'user',
             data: [
-                ' Problem-solving skills and critical thinking',
+                'Problem-solving skills and critical thinking',
                 'Communication skills',
+                'Leadership Skills',
                 'Self-learning',
                 'Accountability',
+                'Adaptability',
                 'Time management',
-                'Emotional intelligence'
+                'Emotional intelligence',
+                'Mentoring'
             ]
-
         }
     ]
 
