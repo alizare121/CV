@@ -1,14 +1,8 @@
 import Head from 'next/head';
 import { useAppContext, useRouter, useEffect } from '@utils';
-import {WorkExperiences , Skills , Educations} from '@components'
+import { WorkExperiences, Skills, Educations } from '@components'
 import { Button, Switch } from 'antd';
 import Link from 'next/link';
-import Image from 'next/image'
-import personal1 from '../assets/images/1.jpg'
-import personal2 from '../assets/images/2.jpg'
-import tse from '../assets/images/tse.png'
-import banimood from '../assets/images/banimode.jpeg';
-import i1st from '../assets/images/1st.jpeg';
 
 export default function Home() {
   const { messages, setLang } = useAppContext();
@@ -47,7 +41,6 @@ export default function Home() {
             style={{ backgroundColor: '#394562' }}
           />
         </Link>
-
         <section className='bg-lightBlue mt-4 py-20 rounded-lg px-20 flex flex-col relative'>
           <span className='text-navy text-lg font-bold'>
             <span className='text-pink'>{messages.hi}</span>, {messages.name}
@@ -68,22 +61,13 @@ export default function Home() {
               </Button>
             </Link>
           </div>
-          
-          
           <div className='bg-white absolute right-0 py-1 px-4 top-40 rounded-s-2xl'>
             <span> social media </span>
           </div>
-         <WorkExperiences />
-         
-         
-         <Skills />
-        
-         <Educations />
-        
+          <WorkExperiences />
+          <Skills />
+          <Educations />
         </section>
-       
-       
-        
       </main>
     </>
   );
