@@ -13,7 +13,7 @@ export function Educations() {
       </div>
       <div className='flex flex-row justify-between mt-4'>
         <div>
-          <div className='flex flex-row bg-white rounded-lg px-8 py-4'>
+          <div className='flex flex-row bg-white rounded-lg px-8 py-4 shadow-md'>
             <Image src={azad} alt='tse' width={90} height={50} className='object-contain mr-4' />
             <div className='flex flex-col ml-2'>
               <span className='text-xl text-navy font-bold'>{messages.eduTitle}</span>
@@ -22,7 +22,7 @@ export function Educations() {
             </div>
           </div>
 
-          <div className='flex flex-row bg-white rounded-lg px-8 py-4 mt-3'>
+          <div className='flex flex-row bg-white rounded-lg px-8 py-4 mt-3 shadow-md'>
             <Image src={edu} alt='tse' width={80} height={50} className='object-contain mr-4' />
             <div className='flex flex-col ml-2'>
               <span className='text-xl text-navy font-bold'>{messages.eduTitle}</span>
@@ -31,8 +31,8 @@ export function Educations() {
             </div>
           </div>
 
-          <div className='flex flex-row bg-white rounded-lg px-8 py-4 mt-3'>
-            <Image src={edu} alt='tse' width={80} height={50} className='object-contain mr-4 bg-white' />
+          <div className='flex flex-row bg-white rounded-lg px-8 py-4 mt-3 shadow-md'>
+            <Image src={edu} alt='tse' width={80} height={50} className='object-contain mr-4' />
             <div className='flex flex-col ml-2'>
               <span className='text-xl text-navy font-bold'>{messages.eduTitle}</span>
               <span className='text-pink'>{messages.associateTitle}</span>

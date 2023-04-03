@@ -73,7 +73,7 @@ export function Slider() {
                     })
                 }
             </div>
-            <div className="bg-white flex-1 my-14 ml-10 rounded-lg p-4">
+            <div className="bg-white flex-1 my-14 ml-10 rounded-lg p-4 shadow-md">
                 {
                     itemData?.map((item) => <li className='text-pink mb-1'><span className='text-navy'>{item}</span></li>)
                 }

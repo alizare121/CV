@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useAppContext, useRouter, useEffect } from '@utils';
-import { WorkExperiences, Skills, Educations } from '@components'
+import { WorkExperiences, Skills, Educations, AboutMe } from '@components'
 import { Button, Switch } from 'antd';
 import Link from 'next/link';
 
@@ -67,6 +67,7 @@ export default function Home() {
           <WorkExperiences />
           <Skills />
           <Educations />
+          <AboutMe />
         </section>
       </main>
     </>

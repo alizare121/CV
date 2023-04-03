@@ -10,7 +10,7 @@ export function WorkExperiences() {
   return (
     <div className='flex flex-col w-full mt-4 items-center justify-center'>
       <Image src={personal1} alt='ali' width={600} height={500} />
-      <div className='bg-white flex flex-col w-full rounded-lg p-8'>
+      <div className='bg-white flex flex-col w-full rounded-lg p-8 shadow-md'>
         <div className='flex flex-col items-center justify-center w-full'>
           <span className='text-4xl text-navy font-bold'>{messages.workExperiences}</span>
           <span className='text-pink'>{messages.workSummeryInfo}</span>
