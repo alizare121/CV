@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useAppContext } from '@utils'
-import personal2 from '../../assets/images/2.jpg'
+import personal2 from '../../assets/images/2.png'
 import azad from '../../assets/images/azad.png'
 import edu from '../../assets/images/education.png'
 export function Educations() {
@@ -40,7 +40,7 @@ export function Educations() {
             </div>
           </div>
         </div>
-        <Image src={personal2} alt='ali' width={600} height={500} />
+        <Image src={personal2} alt='ali' width={350} height={200} className='mt-[-4rem]' />
       </div>
     </section>
   )

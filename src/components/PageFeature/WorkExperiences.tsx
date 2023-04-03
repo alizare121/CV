@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import { useAppContext } from '@utils'
-import personal1 from '../../assets/images/1.jpg'
+import personal1 from '../../assets/images/1.png'
 import tse from '../../assets/images/tse.png'
 import banimood from '../../assets/images/banimode.jpeg';
 import i1st from '../../assets/images/1st.jpeg';
@@ -9,7 +9,7 @@ export function WorkExperiences() {
   const { messages } = useAppContext();
   return (
     <div className='flex flex-col w-full mt-4 items-center justify-center'>
-      <Image src={personal1} alt='ali' width={600} height={500} />
+      <Image src={personal1} alt='ali' width={400} height={300} />
       <div className='bg-white flex flex-col w-full rounded-lg p-8 shadow-md'>
         <div className='flex flex-col items-center justify-center w-full'>
           <span className='text-4xl text-navy font-bold'>{messages.workExperiences}</span>
