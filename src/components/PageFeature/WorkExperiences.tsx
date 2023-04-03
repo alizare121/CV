@@ -15,7 +15,7 @@ export function WorkExperiences() {
         </div>
         <div className='flex flex-col mx-10 mt-10 '>
           <div className='flex flex-row'>
-            <Image src={tse} alt='tse' width={90} height={50} objectFit='contain' />
+            <Image src={tse} alt='tse' width={70} height={40} className='object-contain mr-7' />
             <div className='flex flex-col ml-2'>
               <span className='text-xl text-navy font-bold'>Frontend Developer at Tehran Stock Exchange</span>
               <span className='text-pink'>Apr 2020 - Present </span>
@@ -26,7 +26,7 @@ export function WorkExperiences() {
 
 
           <div className='flex flex-row mt-8'>
-            <Image src={banimood} alt='tse' width={90} height={50} objectFit='contain' />
+            <Image src={banimood} alt='tse' width={90} height={50} className='object-contain mr-4' />
             <div className='flex flex-col ml-2'>
               <span className='text-xl text-navy font-bold'>Frontend (Mobile) Developer at Banimode</span>
               <span className='text-pink'>Jan 2020 - Apr 2020 </span>
@@ -36,7 +36,7 @@ export function WorkExperiences() {
           </div>
 
           <div className='flex flex-row mt-8'>
-            <Image src={i1st} alt='tse' width={90} height={50} objectFit='contain' />
+            <Image src={i1st} alt='tse' width={90} height={50} className='object-contain mr-4' />
             <div className='flex flex-col ml-2'>
               <span className='text-xl text-navy font-bold'>Frontend (Mobile) Developer at First Eurasia E-Commerce</span>
               <span className='text-pink'>July 2018 - Jan 2020 </span>
