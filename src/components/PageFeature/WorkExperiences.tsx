@@ -5,6 +5,7 @@ import personal1 from '../../assets/images/1.png'
 import tse from '../../assets/images/tse.png'
 import banimood from '../../assets/images/banimode.jpeg';
 import i1st from '../../assets/images/1st.jpeg';
+import freelance from '../../assets/images/freelancer.png'
 export function WorkExperiences() {
   const { messages } = useAppContext();
   return (
@@ -41,6 +42,24 @@ export function WorkExperiences() {
               <span className='text-xl text-navy font-bold'>{messages.stJobTitle}</span>
               <span className='text-pink'>{messages.stJobDate}</span>
               <span className='text-lightNavy'>{messages.stJobInfo}</span>
+            </div>
+          </div>
+
+          <div className='flex flex-row mt-8'>
+            <Image src={i1st} alt='tse' width={90} height={50} className='object-contain mr-4' />
+            <div className='flex flex-col ml-2'>
+              <span className='text-xl text-navy font-bold'>{messages.stNetJobTitle}</span>
+              <span className='text-pink'>{messages.stNetJobDate}</span>
+              <span className='text-lightNavy'>{messages.stNetJobInfo}</span>
+            </div>
+          </div>
+
+          <div className='flex flex-row mt-8'>
+            <Image src={freelance} alt='tse' width={90} height={50} className='object-contain mr-4' />
+            <div className='flex flex-col ml-2'>
+              <span className='text-xl text-navy font-bold'>{messages.stNetJobTitle}</span>
+              <span className='text-pink'>{messages.freeJobDate}</span>
+              <span className='text-lightNavy'>{messages.freeJobInfo}</span>
             </div>
           </div>
         </div>

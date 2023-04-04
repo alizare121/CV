@@ -35,8 +35,8 @@ export default function Home() {
           <Switch
             defaultChecked
             onChange={onChangeLang}
-            unCheckedChildren='FA'
-            checkedChildren='EN'
+            unCheckedChildren='EN'
+            checkedChildren='FA'
             size='small'
             style={{ backgroundColor: '#394562' }}
           />
