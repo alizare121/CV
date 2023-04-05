@@ -7,33 +7,21 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "531359183f9fedb14b23666f1308591f",
-      "css": "telegram",
-      "code": 62150,
-      "src": "fontawesome"
-    },
-    {
       "uid": "0f6a2573a7b6df911ed199bb63717e27",
       "css": "github-circled",
       "code": 61595,
       "src": "fontawesome"
     },
     {
-      "uid": "21adad41ffebf469b2370d26bcb8a3c4",
-      "css": "linkedin-circled",
-      "code": 62233,
-      "src": "entypo"
+      "uid": "531359183f9fedb14b23666f1308591f",
+      "css": "telegram",
+      "code": 62150,
+      "src": "fontawesome"
     },
     {
-      "uid": "d0c177a8e1688175c3445cc6b25bcc90",
-      "css": "linkedin-circled-1",
-      "code": 61531,
-      "src": "mfglabs"
-    },
-    {
-      "uid": "7034e4d22866af82bef811f52fb1ba46",
-      "css": "code",
-      "code": 61729,
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 61664,
       "src": "fontawesome"
     },
     {
@@ -43,15 +31,27 @@
       "src": "fontawesome"
     },
     {
-      "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
+      "uid": "fd3128bf109153952b1b775ea574504b",
       "css": "user",
       "code": 59393,
-      "src": "entypo"
+      "src": "websymbols"
+    },
+    {
+      "uid": "7034e4d22866af82bef811f52fb1ba46",
+      "css": "code",
+      "code": 61729,
+      "src": "fontawesome"
     },
     {
       "uid": "b7a336095aa4535c3689cb557edf23db",
       "css": "monitor",
       "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "21adad41ffebf469b2370d26bcb8a3c4",
+      "css": "linkedin-circled",
+      "code": 62233,
       "src": "entypo"
     }
   ]

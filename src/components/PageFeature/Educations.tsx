@@ -2,7 +2,8 @@ import Image from 'next/image'
 import { useAppContext } from '@utils'
 import personal2 from '../../assets/images/2.png'
 import azad from '../../assets/images/azad.png'
-import edu from '../../assets/images/education.png'
+import amol from '../../assets/images/amol.png'
+import beh from '../../assets/images/beh.png'
 export function Educations() {
   const { messages } = useAppContext();
   return (
@@ -23,7 +24,7 @@ export function Educations() {
           </div>
 
           <div className='flex flex-row bg-white rounded-lg px-8 py-4 mt-3 shadow-md'>
-            <Image src={edu} alt='tse' width={80} height={50} className='object-contain mr-4' />
+            <Image src={amol} alt='tse' width={80} height={50} className='object-contain mr-4' />
             <div className='flex flex-col ml-2'>
               <span className='text-xl text-navy font-bold'>{messages.eduTitle}</span>
               <span className='text-pink'>{messages.bachelorTitle}</span>
@@ -32,7 +33,7 @@ export function Educations() {
           </div>
 
           <div className='flex flex-row bg-white rounded-lg px-8 py-4 mt-3 shadow-md'>
-            <Image src={edu} alt='tse' width={80} height={50} className='object-contain mr-4' />
+            <Image src={beh} alt='tse' width={80} height={50} className='object-contain mr-4' />
             <div className='flex flex-col ml-2'>
               <span className='text-xl text-navy font-bold'>{messages.eduTitle}</span>
               <span className='text-pink'>{messages.associateTitle}</span>

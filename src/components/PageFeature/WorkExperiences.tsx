@@ -6,6 +6,7 @@ import tse from '../../assets/images/tse.png'
 import banimood from '../../assets/images/banimode.jpeg';
 import i1st from '../../assets/images/1st.jpeg';
 import freelance from '../../assets/images/freelancer.png'
+import iNet from '../../assets/images/inet.png'
 export function WorkExperiences() {
   const { messages } = useAppContext();
   return (
@@ -55,9 +56,9 @@ export function WorkExperiences() {
           </div>
 
           <div className='flex flex-row mt-8'>
-            <Image src={freelance} alt='tse' width={90} height={50} className='object-contain mr-4' />
+            <Image src={iNet} alt='tse' width={90} height={70} className='object-contain mr-4' />
             <div className='flex flex-col ml-2'>
-              <span className='text-xl text-navy font-bold'>{messages.stNetJobTitle}</span>
+              <span className='text-xl text-navy font-bold'>{messages.freeJobTitle}</span>
               <span className='text-pink'>{messages.freeJobDate}</span>
               <span className='text-lightNavy'>{messages.freeJobInfo}</span>
             </div>

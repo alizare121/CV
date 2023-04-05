@@ -59,14 +59,15 @@ export function Slider() {
     const itemData = data.find((i) => i.id === activeItem)?.data
     return (
         <div className="ml-8 flex h-full">
-            <div className="flex flex-col justify-between items-center my-8 relative">
-                <div className="bg-navy h-full w-1 flex absolute right-6 z-10" />
+            <div className="flex flex-col justify-between items-center my-8 relative w-20">
+                <div className="bg-navy h-full w-1 flex absolute right-9 z-10 " />
                 {
                     data.map(({ title, id, icon }) => {
                         const isActive = activeItem === id;
                         const iconColor = isActive ? 'text-navy' : 'text-lightNavy';
+                        const size = isActive ? 'w-14 h-14' : 'w-12 h-12'
                         return <Tooltip key={id} title={title}>
-                            <div onClick={() => setActiveItem(id)} className="w-12 h-12 z-20 shadow rounded-full bg-white items-center justify-center flex cursor-pointer hover:scale-110 hover:bg-indigo-700 duration-300">
+                            <div onClick={() => setActiveItem(id)} className={`${size} z-20 shadow rounded-full bg-white items-center justify-center flex cursor-pointer hover:scale-110 hover:bg-indigo-300 duration-300`}>
                                 <Icon iconName={icon} className={`text-2xl ${iconColor}`} />
                             </div>
                         </Tooltip>
