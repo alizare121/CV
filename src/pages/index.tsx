@@ -37,7 +37,6 @@ export default function Home() {
             onChange={onChangeLang}
             unCheckedChildren='EN'
             checkedChildren='FA'
-            size='small'
             style={{ backgroundColor: '#394562' }}
           />
         </Link>
