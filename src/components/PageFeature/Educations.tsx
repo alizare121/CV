@@ -11,7 +11,7 @@ export function Educations() {
         <span className='text-pink'>{messages.qualification}</span>
         <span className='text-4xl text-navy font-bold'>{messages.educations}</span>
       </div>
-      <div className='flex flex-row justify-between mt-4'>
+      <div className='flex flex-row justify-around mt-8'>
         <div>
           <div className='flex flex-row bg-white rounded-lg px-8 py-4 shadow-md'>
             <Image src={azad} alt='tse' width={90} height={50} className='object-contain mr-4' />
