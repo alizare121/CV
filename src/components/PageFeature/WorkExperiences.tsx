@@ -5,7 +5,6 @@ import personal1 from '../../assets/images/1.png'
 import tse from '../../assets/images/tse.png'
 import banimood from '../../assets/images/banimode.jpeg';
 import i1st from '../../assets/images/1st.jpeg';
-import freelance from '../../assets/images/freelancer.png'
 import iNet from '../../assets/images/inet.png'
 export function WorkExperiences() {
   const { messages } = useAppContext();
