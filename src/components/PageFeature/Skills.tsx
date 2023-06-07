@@ -12,7 +12,7 @@ export function Skills() {
             </div>
             <div className='flex flex-row items-center mt-4'>
                 <Image src={personal2} alt='ali' width={350} height={250} className='mr-20' />
-                <div className='flex-1 h-[25rem]'>
+                <div className='flex-1'>
                     <Slider />
                 </div>
 

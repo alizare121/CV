@@ -58,7 +58,7 @@ export function Slider() {
 
     const itemData = data.find((i) => i.id === activeItem)?.data
     return (
-        <div className="ml-8 flex h-full">
+        <div className="ml-8 flex min-h-[28rem]">
             <div className="flex flex-col justify-between items-center my-8 relative w-20">
                 <div className="bg-navy h-full w-1 flex absolute right-9 z-10 " />
                 {
