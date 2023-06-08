@@ -1,5 +1,5 @@
 {
-  "hi": "Hello",
+  "hi": "Hello ,",
   "name": "Im Ali Zare",
   "jobTitle": "Software Engineer",
   "jobInfo": "Senior Frontend Developer | Blockchain and Machine Learning Researcher",
@@ -31,5 +31,16 @@
   "stNetJobInfo": "Administer 10+ servers in a windows server environment and support +100 clients. worked with Mikrotik, Switch. Working knowledge of the diagnosis, repair & debugging of software & computer systems",
   "freeJobTitle" : "Network Administrator at iNet (My Company)",
   "freeJobDate": "MAR 2014 - MAY 2017",
-  "freeJobInfo": "Network administrator and support and repair & debugging of software & computer systems in several companies."
+  "freeJobInfo": "Network administrator and support and repair & debugging of software & computer systems in several companies.",
+  "softSkill1" : "Problem-solving skills and critical thinking",
+  "softSkill2" : "Communication skills",
+  "softSkill3" : "Leadership Skills",
+  "softSkill4" : "Self-learning",
+  "softSkill5" : "Accountability",
+  "softSkill6" : "Adaptability",
+  "softSkill7" : "Time management",
+  "softSkill8" : "Emotional intelligence",
+  "softSkill9" : "Mentoring",
+  "call":"Call Me",
+  "cv" : "Get CV"
 }

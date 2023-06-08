@@ -1,6 +1,7 @@
 import { Icon, Tooltip } from '@components'
-import { useState } from '@utils'
+import { useState , useAppContext} from '@utils'
 export function Slider() {
+    const { messages } = useAppContext();
     const [activeItem, setActiveItem] = useState(1)
     const data = [
         {
@@ -43,15 +44,15 @@ export function Slider() {
             title: 'Soft Skills',
             icon: 'user',
             data: [
-                'Problem-solving skills and critical thinking',
-                'Communication skills',
-                'Leadership Skills',
-                'Self-learning',
-                'Accountability',
-                'Adaptability',
-                'Time management',
-                'Emotional intelligence',
-                'Mentoring'
+                messages.softSkill1,
+                messages.softSkill2,
+                messages.softSkill3,
+                messages.softSkill4,
+                messages.softSkill5,
+                messages.softSkill6,
+                messages.softSkill7,
+                messages.softSkill8,
+                messages.softSkill9
             ]
         }
     ]
@@ -60,7 +61,7 @@ export function Slider() {
     return (
         <div className="ml-8 flex min-h-[28rem]">
             <div className="flex flex-col justify-between items-center my-8 relative w-20">
-                <div className="bg-navy h-full w-1 flex absolute right-9 z-10 " />
+                <div className="bg-navy h-full w-1 flex absolute end-9 z-10 " />
                 {
                     data.map(({ title, id, icon }) => {
                         const isActive = activeItem === id;
@@ -74,7 +75,7 @@ export function Slider() {
                     })
                 }
             </div>
-            <div className="bg-white flex-1 my-14 ml-10 rounded-lg p-4 shadow-md">
+            <div className="bg-white flex-1 my-14 ms-10 rounded-lg p-4 shadow-md">
                 {
                     itemData?.map((item) => <li className='text-pink mb-1'><span className='text-navy'>{item}</span></li>)
                 }

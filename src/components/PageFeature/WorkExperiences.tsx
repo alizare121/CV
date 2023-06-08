@@ -18,8 +18,8 @@ export function WorkExperiences() {
         </div>
         <div className='flex flex-col mx-10 mt-10 '>
           <div className='flex flex-row'>
-            <Image src={tse} alt='tse' width={70} height={40} className='object-contain mr-7' />
-            <div className='flex flex-col ml-2'>
+            <Image src={tse} alt='tse' width={70} height={40} className='object-contain me-7' />
+            <div className='flex flex-col ms-2'>
               <span className='text-xl text-navy font-bold'>{messages.tseJobTitle}</span>
               <span className='text-pink'>{messages.tseJobDate}</span>
               <span className='text-lightNavy'>{messages.tseJobInfo}</span>
@@ -28,8 +28,8 @@ export function WorkExperiences() {
 
 
           <div className='flex flex-row mt-8'>
-            <Image src={banimood} alt='tse' width={90} height={50} className='object-contain mr-4' />
-            <div className='flex flex-col ml-2'>
+            <Image src={banimood} alt='tse' width={90} height={50} className='object-contain me-4' />
+            <div className='flex flex-col ms-2'>
               <span className='text-xl text-navy font-bold'>{messages.baniJobTitle}</span>
               <span className='text-pink'>{messages.baniJobDate}</span>
               <span className='text-lightNavy'>{messages.baniJobInfo}</span>
@@ -37,8 +37,8 @@ export function WorkExperiences() {
           </div>
 
           <div className='flex flex-row mt-8'>
-            <Image src={i1st} alt='tse' width={90} height={50} className='object-contain mr-4' />
-            <div className='flex flex-col ml-2'>
+            <Image src={i1st} alt='tse' width={90} height={50} className='object-contain me-4' />
+            <div className='flex flex-col ms-2'>
               <span className='text-xl text-navy font-bold'>{messages.stJobTitle}</span>
               <span className='text-pink'>{messages.stJobDate}</span>
               <span className='text-lightNavy'>{messages.stJobInfo}</span>
@@ -46,8 +46,8 @@ export function WorkExperiences() {
           </div>
 
           <div className='flex flex-row mt-8'>
-            <Image src={i1st} alt='tse' width={90} height={50} className='object-contain mr-4' />
-            <div className='flex flex-col ml-2'>
+            <Image src={i1st} alt='tse' width={90} height={50} className='object-contain me-4' />
+            <div className='flex flex-col ms-2'>
               <span className='text-xl text-navy font-bold'>{messages.stNetJobTitle}</span>
               <span className='text-pink'>{messages.stNetJobDate}</span>
               <span className='text-lightNavy'>{messages.stNetJobInfo}</span>
@@ -55,8 +55,8 @@ export function WorkExperiences() {
           </div>
 
           <div className='flex flex-row mt-8'>
-            <Image src={iNet} alt='tse' width={90} height={70} className='object-contain mr-4' />
-            <div className='flex flex-col ml-2'>
+            <Image src={iNet} alt='tse' width={90} height={70} className='object-contain me-4' />
+            <div className='flex flex-col ms-2'>
               <span className='text-xl text-navy font-bold'>{messages.freeJobTitle}</span>
               <span className='text-pink'>{messages.freeJobDate}</span>
               <span className='text-lightNavy'>{messages.freeJobInfo}</span>

@@ -15,6 +15,7 @@ export default function Home() {
   useEffect(onChangeLang, [router.locale]);
 
   const languageCheck: string = router?.locale === 'en' ? 'fa' : 'en';
+  const isEn = router?.locale === 'en';
 
   const socialData = [
     {
@@ -72,7 +73,7 @@ export default function Home() {
         </Link>
         <section className='bg-lightBlue mt-4 py-20 rounded-lg px-20 flex flex-col relative'>
           <span className='text-navy text-lg font-bold'>
-            <span className='text-pink'>{messages.hi}</span>, {messages.name}
+            <span className='text-pink'>{messages.hi}</span> {messages.name}
           </span>
           <span className='text-4xl text-navy font-bold my-2'>
             {messages.jobTitle}
@@ -80,17 +81,17 @@ export default function Home() {
           <span className='text-lightNavy'>{messages.jobInfo}</span>
           <div className='mt-4'>
             <Link href='tel:+989101011426'>
-              <Button className='mr-6 bg-pink text-white rounded-2xl text-xs px-8'>
-                Call Me
+              <Button className='me-6 bg-pink text-white rounded-2xl text-xs px-8'>
+                {messages.call}
               </Button>
             </Link>
             <a target="_blank" href='/Ali Zare CV.v1.pdf'>
               <Button className='text-pink border-pink rounded-2xl text-xs px-8'>
-                Get CV
+                {messages.cv}
               </Button>
             </a>
           </div>
-          <div className='bg-white absolute right-0 py-2 px-4 top-40 rounded-s-2xl flex flex-row'>
+          <div className='bg-white absolute  py-2 px-4 top-40 rounded-s-2xl flex flex-row end-0'>
             {
               socialData.map(({ link, icon, id, color }) => {
                 return (
@@ -102,8 +103,8 @@ export default function Home() {
             }
           </div>
           <WorkExperiences />
-          <Skills />
-          <Educations />
+          <Skills isEn={isEn} />
+          <Educations isEn={isEn}/>
           <AboutMe />
         </section>
       </main>
