@@ -2,7 +2,7 @@ import Image from 'next/image'
 import personal2 from '../../assets/images/dev1.png'
 import { Slider } from '@components'
 import { useAppContext } from '@utils'
-export function Skills({isEn}) {
+export function Skills({isEn}:{isEn : boolean}) {
     const { messages } = useAppContext();
     const scale = isEn ? '' : 'scale-x-[-1]'
     return (

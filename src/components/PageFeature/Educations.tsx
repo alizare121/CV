@@ -4,7 +4,7 @@ import personal2 from '../../assets/images/2.png'
 import azad from '../../assets/images/azad.png'
 import amol from '../../assets/images/amol.png'
 import beh from '../../assets/images/beh.png'
-export function Educations({isEn}) {
+export function Educations({isEn}:{isEn : boolean}) {
   const { messages } = useAppContext();
   const scale = isEn ? '' : 'scale-x-[-1]'
   return (
