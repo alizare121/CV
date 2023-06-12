@@ -4,6 +4,7 @@ export interface StoreType {
   locale?: string;
   messages?: any;
   result?: any;
+  ServerContextJSONValue?:any;
 }
 
 export interface ActionType {
