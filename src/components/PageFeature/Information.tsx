@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import Link from 'next/link';
 
 export function Information() {
-    const { messages, setLang } = useAppContext();
+    const { messages } = useAppContext();
     return (
         <>
             <span className='text-navy text-lg font-bold'>
