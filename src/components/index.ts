@@ -1,8 +1,8 @@
 // lib component
-export { Tooltip , Switch } from 'antd';
+export { Tooltip, Switch } from 'antd';
 import Image from 'next/image';
-import Link  from 'next/link';
-export { Image , Link };
+import Link from 'next/link';
+export { Image, Link };
 
 // atoms component
 export { Slider } from './atoms/Slider';

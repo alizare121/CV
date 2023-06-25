@@ -1,5 +1,15 @@
 import { useAppContext, useRouter, useEffect } from '@utils';
-import { WorkExperiences, Skills, Educations, AboutMe, SocialMedia, Information, Header, Switch, Link } from '@components';
+import {
+  WorkExperiences,
+  Skills,
+  Educations,
+  AboutMe,
+  SocialMedia,
+  Information,
+  Header,
+  Switch,
+  Link,
+} from '@components';
 
 export default function Home() {
   const { setLang } = useAppContext();

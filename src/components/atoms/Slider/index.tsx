@@ -1,85 +1,36 @@
-import { Icon, Tooltip } from '@components'
-import { useState , useAppContext} from '@utils'
-export function Slider() {
-    const { messages } = useAppContext();
-    const [activeItem, setActiveItem] = useState(1)
-    const data = [
-        {
-            id: 1,
-            title: 'Development',
-            icon: 'code',
-            data: [
-                'JavaScript (ES6 & Beyond) ',
-                'TypeScript',
-                'React JS',
-                'React Native',
-                'Next js',
-                'State Management : Redux ,Context Api , MobX , Recoil',
-                'HTML/CSS',
-                'Bootstrap/Material-Ui/Ant Design/StyledComponents/tailwind',
-                'Test : Static Test (Flow ) , Unit Test (jest)'
-            ]
-        },
-        {
-            id: 2,
-            title: 'Tools',
-            icon: 'wrench',
-            data: [
-                'Git (Git Flow)',
-                'Firbase (Push Notification , Analytics , Crashlytics)',
-                'Update (CodePush)',
-                'Monitoring ( Sentry )',
-                'Documentation ( StoryBook )',
-                'Scrum methodology'
-            ]
-        },
-        {
-            id: 3,
-            title: 'Network',
-            icon: 'monitor',
-            data: ['MikroTik', 'MCITP', 'Linux', 'Docker']
-        },
-        {
-            id: 4,
-            title: 'Soft Skills',
-            icon: 'user',
-            data: [
-                messages.softSkill1,
-                messages.softSkill2,
-                messages.softSkill3,
-                messages.softSkill4,
-                messages.softSkill5,
-                messages.softSkill6,
-                messages.softSkill7,
-                messages.softSkill8,
-                messages.softSkill9
-            ]
-        }
-    ]
-
-    const itemData = data.find((i) => i.id === activeItem)?.data
-    return (
-        <div className="ml-8 flex min-h-[28rem]">
-            <div className="flex flex-col justify-between items-center my-8 relative w-20">
-                <div className="bg-navy h-full w-1 flex absolute end-9 z-10 " />
-                {
-                    data.map(({ title, id, icon }) => {
-                        const isActive = activeItem === id;
-                        const iconColor = isActive ? 'text-navy' : 'text-lightNavy';
-                        const size = isActive ? 'w-14 h-14' : 'w-12 h-12'
-                        return <Tooltip key={id} title={title}>
-                            <div onClick={() => setActiveItem(id)} className={`${size} z-20 shadow rounded-full bg-white items-center justify-center flex cursor-pointer hover:scale-110 hover:bg-indigo-300 duration-300`}>
-                                <Icon iconName={icon} className={`text-2xl ${iconColor}`} />
-                            </div>
-                        </Tooltip>
-                    })
-                }
-            </div>
-            <div className="bg-white flex-1 my-14 ms-10 rounded-lg p-4 shadow-md">
-                {
-                    itemData?.map((item) => <li className='text-pink mb-1'><span className='text-navy'>{item}</span></li>)
-                }
-            </div>
-        </div>
-    )
+import { Icon, Tooltip } from '@components';
+import { useState } from '@utils';
+import { SkillsInterface } from '@enums';
+export function Slider({ data }: { data: SkillsInterface[] }) {
+  const [activeItem, setActiveItem] = useState<number>(1);
+  const itemData = data.find((i: SkillsInterface) => i.id === activeItem)?.data;
+  return (
+    <div className='ml-8 flex min-h-[28rem]'>
+      <div className='flex flex-col justify-between items-center my-8 relative w-20'>
+        <div className='bg-navy h-full w-1 flex absolute end-9 z-10 ' />
+        {data.map(({ title, id, icon }: SkillsInterface) => {
+          const isActive = activeItem === id;
+          const iconColor = isActive ? 'text-navy' : 'text-lightNavy';
+          const size = isActive ? 'w-14 h-14' : 'w-12 h-12';
+          return (
+            <Tooltip key={id} title={title}>
+              <div
+                onClick={() => setActiveItem(id)}
+                className={`${size} z-20 shadow rounded-full bg-white items-center justify-center flex cursor-pointer hover:scale-110 hover:bg-indigo-300 duration-300`}
+              >
+                <Icon iconName={icon} className={`text-2xl ${iconColor}`} />
+              </div>
+            </Tooltip>
+          );
+        })}
+      </div>
+      <div className='bg-white flex-1 my-14 ms-10 rounded-lg p-4 shadow-md'>
+        {itemData?.map((item) => (
+          <li className='text-pink mb-1'>
+            <span className='text-navy'>{item}</span>
+          </li>
+        ))}
+      </div>
+    </div>
+  );
 }

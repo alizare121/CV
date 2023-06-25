@@ -7,6 +7,13 @@ main {
   height: 100vh;
 }
 
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'IRANSans' !important;
+  font-size: 14px !important;
+}
+
 @font-face {
   font-family: 'IRANSans';
   src: url('/fonts/IRANSans.ttf');
@@ -14,10 +21,26 @@ main {
   font-display: swap;
 }
 
+body {
+  unicode-range: U+00-FF, U+980-9FF;
+}
+
 html[lang='fa'] {
-    span,
-    strong,
-    p {
-      font-family: 'IRANSans' !important;
-    }
+  span,
+  strong,
+  p {
+    font-family: 'IRANSans';
   }
+}
+
+html[lang='en'] {
+  span,
+  strong,
+  p {
+    font-family: 'Times New Roman';
+  }
+}
+
+// body {
+//   font-family: 'IRANSans', serif !important;
+// }
