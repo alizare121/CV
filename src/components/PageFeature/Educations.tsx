@@ -42,7 +42,7 @@ export function Educations({isEn}:{isEn : boolean}) {
             </div>
           </div>
         </div>
-        <Image src={personal2} alt='ali' width={350} height={200} className={`mt-[-4rem] ${scale}`} />
+        <Image src={personal2} alt='ali' width={300} height={150} className={`mt-[-4rem] ${scale}`} />
       </div>
     </section>
   )
