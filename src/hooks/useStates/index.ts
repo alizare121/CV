@@ -3,7 +3,6 @@
  * I'm going to use it in my future projects
  * Use for complex forms or components they have a lot of states
  * You can also add callback functions for asynchronous logics
- * Here you can find more detail about it: https://github.com/majidux/useStates
  */
 
 import {

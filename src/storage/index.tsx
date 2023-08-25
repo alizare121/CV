@@ -7,7 +7,6 @@ const store: any = createContext(combineStates);
 function StoreProvider({ children }: any) {
   const value = {
     ...LanguageWatcher(),
-  
   };
   return <store.Provider {...{ value }}>{children}</store.Provider>;
 }

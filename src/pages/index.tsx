@@ -1,11 +1,18 @@
-import Head from 'next/head';
 import { useAppContext, useRouter, useEffect } from '@utils';
-import { WorkExperiences, Skills, Educations, AboutMe, Icon } from '@components'
-import { Button, Switch } from 'antd';
-import Link from 'next/link';
+import {
+  WorkExperiences,
+  Skills,
+  Educations,
+  AboutMe,
+  SocialMedia,
+  Information,
+  Header,
+  Switch,
+  Link,
+} from '@components';
 
 export default function Home() {
-  const { messages, setLang } = useAppContext();
+  const { setLang } = useAppContext();
   const router = useRouter();
 
   const onChangeLang = () => {
@@ -17,44 +24,9 @@ export default function Home() {
   const languageCheck: string = router?.locale === 'en' ? 'fa' : 'en';
   const isEn = router?.locale === 'en';
 
-  const socialData = [
-    {
-      id: 1,
-      title: 'github',
-      icon: 'github-circled',
-      link: 'https://github.com/alizare121'
-    },
-    {
-      id: 2,
-      title: 'linkedin',
-      icon: 'linkedin-circled',
-      link: 'https://www.linkedin.com/in/ali-zare/',
-      color: 'text-[#0c65c2]'
-    },
-    {
-      id: 3,
-      title: 'email',
-      icon: 'mail-alt',
-      link: 'mailto:aliiizaareee@gmail.com',
-      color: 'text-[#db5649]'
-    },
-    {
-      id: 4,
-      title: 'telegram',
-      icon: 'telegram',
-      link: 'https://t.me/aliiizareee',
-      color: 'text-[#26a0dc]'
-    }
-  ]
-
   return (
     <>
-      <Head>
-        <title>Ali Zare CV</title>
-        <meta name='description' content='Ali Zare CV' />
-        <meta name='viewport' content="width=1024" />
-        <link rel='icon' href='/dev-icon2.png' />
-      </Head>
+      <Header />
       <main className='p-4'>
         <Link
           className='flex items-center'
@@ -72,39 +44,11 @@ export default function Home() {
           />
         </Link>
         <section className='bg-lightBlue mt-4 py-20 rounded-lg px-20 flex flex-col relative'>
-          <span className='text-navy text-lg font-bold'>
-            <span className='text-pink'>{messages.hi}</span> {messages.name}
-          </span>
-          <span className='text-4xl text-navy font-bold my-2'>
-            {messages.jobTitle}
-          </span>
-          <span className='text-lightNavy'>{messages.jobInfo}</span>
-          <div className='mt-4'>
-            <Link href='tel:+989101011426'>
-              <Button className='me-6 bg-pink text-white rounded-2xl text-xs px-8'>
-                {messages.call}
-              </Button>
-            </Link>
-            <a target="_blank" href='/Ali Zare CV.v1.pdf'>
-              <Button className='text-pink border-pink rounded-2xl text-xs px-8'>
-                {messages.cv}
-              </Button>
-            </a>
-          </div>
-          <div className='bg-white absolute  py-2 px-4 top-40 rounded-s-2xl flex flex-row end-0'>
-            {
-              socialData.map(({ link, icon, id, color }) => {
-                return (
-                  <a key={id} target="_blank" href={link} className='mr-1 hover:scale-110 hover:bg-indigo-500 duration-300'>
-                    <Icon iconName={icon} className={`text-3xl ${color} `} />
-                  </a>
-                )
-              })
-            }
-          </div>
+          <Information />
+          <SocialMedia />
           <WorkExperiences />
           <Skills isEn={isEn} />
-          <Educations isEn={isEn}/>
+          <Educations isEn={isEn} />
           <AboutMe />
         </section>
       </main>
