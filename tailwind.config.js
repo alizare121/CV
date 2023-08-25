@@ -17,7 +17,8 @@ module.exports = {
       pink: '#ea4c89',
       lightBlue: '#f2f4f9',
       lightNavy: '#9ba2c6',
-      blue : 'blue'
+      blue: 'blue',
+      lightPink: '#ffb6c1',
     },
   },
   plugins: [],

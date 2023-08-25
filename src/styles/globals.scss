@@ -15,9 +15,52 @@ main {
 }
 
 html[lang='fa'] {
-    span,
-    strong,
-    p {
-      font-family: 'IRANSans' !important;
-    }
+
+  span,
+  strong,
+  p {
+    font-family: 'IRANSans' !important;
   }
+}
+
+.custom-bg-edu {
+  border-radius: 45% 55% 81% 19% / 59% 60% 40% 41%;
+  height: 22rem;
+  width: 30rem;
+  z-index: 0 !important;
+}
+
+.custom-bg-skill {
+  border-radius: 45% 55% 81% 19% / 59% 60% 40% 41%;
+  height: 22rem;
+  width: 30rem;
+  z-index: 0 !important;
+}
+
+.personal-image {
+  z-index: 9 !important;
+  position: absolute;
+  top: 0;
+}
+
+.container-bg {
+  height: 27rem;
+  width: 35rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 45% 55% 81% 19% / 59% 60% 40% 41%;
+}
+
+.container-bg-edu {
+  height: 30rem;
+  width: 35rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 45% 55% 81% 19% / 59% 60% 40% 41%;
+}
