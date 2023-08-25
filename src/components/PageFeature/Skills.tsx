@@ -75,7 +75,7 @@ export function Skills({ isEn }: { isEn: boolean }) {
             height={200}
             className={`personal-image me-20 ${scale}`}
           />
-          <div className='custom-bg-skill bg-lightNavy' />
+          <div className='custom-bg-skill bg-lightPink' />
         </div>
         <div className='flex-1'>
           <Slider data={data} />

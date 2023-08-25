@@ -76,7 +76,7 @@ export function Educations({ isEn }: { isEn: boolean }) {
             height={200}
             className={`personal-image ${scale}`}
           />
-          <div className='custom-bg-edu bg-lightPink'></div>
+          <div className='custom-bg-edu bg-lightNavy'></div>
         </div>
       </div>
     </section>
