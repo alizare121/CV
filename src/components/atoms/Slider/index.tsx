@@ -4,6 +4,8 @@ import { SkillsInterface } from '@enums';
 export function Slider({ data }: { data: SkillsInterface[] }) {
   const [activeItem, setActiveItem] = useState<number>(1);
   const itemData = data.find((i: SkillsInterface) => i.id === activeItem)?.data;
+
+  const note = data[activeItem - 1].note;
   return (
     <div className='ml-8 flex min-h-[28rem]'>
       <div className='flex flex-col justify-between items-center my-8 relative w-20'>
@@ -24,12 +26,15 @@ export function Slider({ data }: { data: SkillsInterface[] }) {
           );
         })}
       </div>
-      <div className='bg-white flex-1 my-14 ms-10 rounded-lg p-4 shadow-md'>
-        {itemData?.map((item) => (
-          <li className='text-pink mb-1'>
-            <span className='text-navy'>{item}</span>
-          </li>
-        ))}
+      <div className='bg-white flex-1 flex flex-col justify-between my-14 ms-10 rounded-lg p-4 shadow-md'>
+        <div>
+          {itemData?.map((item) => (
+            <li className='text-pink mb-1'>
+              <span className='text-navy'>{item}</span>
+            </li>
+          ))}
+        </div>
+        <span className='text-pink text-center text-lg mb-8'>{note}</span>
       </div>
     </div>
   );

@@ -3,4 +3,5 @@ export interface SkillsInterface {
   title?: string;
   icon?: string;
   data?: string[];
+  note?: string;
 }

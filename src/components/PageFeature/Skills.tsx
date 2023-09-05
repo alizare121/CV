@@ -39,12 +39,19 @@ export function Skills({ isEn }: { isEn: boolean }) {
     },
     {
       id: 3,
+      title: 'Blockchain',
+      icon: 'blockchain',
+      data: ['Solidity', 'Blockchain', 'Ethereum'],
+      note : "I am learning and junior in this field"
+    },
+    {
+      id: 4,
       title: 'Network',
       icon: 'monitor',
       data: ['MikroTik', 'MCITP', 'Linux', 'Docker'],
     },
     {
-      id: 4,
+      id: 5,
       title: 'Soft Skills',
       icon: 'user',
       data: [

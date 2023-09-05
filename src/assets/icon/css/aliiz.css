@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'aliiz';
-  src: url('../font/aliiz.eot?99534611');
-  src: url('../font/aliiz.eot?99534611#iefix') format('embedded-opentype'),
-       url('../font/aliiz.woff2?99534611') format('woff2'),
-       url('../font/aliiz.woff?99534611') format('woff'),
-       url('../font/aliiz.ttf?99534611') format('truetype'),
-       url('../font/aliiz.svg?99534611#aliiz') format('svg');
+  src: url('../font/aliiz.eot?88326183');
+  src: url('../font/aliiz.eot?88326183#iefix') format('embedded-opentype'),
+       url('../font/aliiz.woff2?88326183') format('woff2'),
+       url('../font/aliiz.woff?88326183') format('woff'),
+       url('../font/aliiz.ttf?88326183') format('truetype'),
+       url('../font/aliiz.svg?88326183#aliiz') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'aliiz';
-    src: url('../font/aliiz.svg?99534611#aliiz') format('svg');
+    src: url('../font/aliiz.svg?88326183#aliiz') format('svg');
   }
 }
 */
@@ -57,8 +57,9 @@
 .icon-wrench:before { content: '\e800'; } /* '' */
 .icon-user:before { content: '\e801'; } /* '' */
 .icon-monitor:before { content: '\e802'; } /* '' */
+.icon-blockchain:before { content: '\e803'; } /* '' */
+.icon-linkedin-circled-1:before { content: '\f05b'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
-.icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-code:before { content: '\f121'; } /* '' */
 .icon-telegram:before { content: '\f2c6'; } /* '' */
 .icon-linkedin-circled:before { content: '\f319'; } /* '' */
