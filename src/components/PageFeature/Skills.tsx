@@ -18,10 +18,11 @@ export function Skills({ isEn }: { isEn: boolean }) {
         'React JS',
         'React Native',
         'Next js',
-        'State Management : Redux ,Context Api , MobX , Recoil',
-        'HTML/CSS',
-        'Bootstrap/Material-Ui/Ant Design/StyledComponents/tailwind',
-        'Test : Static Test (Flow ) , Unit Test (jest)',
+        'State Management : Redux(thunk), Context Api, MobX, Recoil',
+        'HTML, CSS, SASS, Style-jsx, emotion, Post-css',
+        'Bootstrap, Material-Ui, Ant Design, Styled-Components, tailwind',
+        'Test : Unit Test (jest), Integration Test, End to End Test',
+        'Webpack , Vite.js'
       ],
     },
     {
@@ -29,8 +30,8 @@ export function Skills({ isEn }: { isEn: boolean }) {
       title: 'Tools',
       icon: 'wrench',
       data: [
-        'Git (Git Flow)',
-        'Firbase (Push Notification , Analytics , Crashlytics)',
+        'Git , Git Flow , monorepo',
+        'Firebase (Push Notification , Analytics , Crashlytics)',
         'Update (CodePush)',
         'Monitoring ( Sentry )',
         'Documentation ( StoryBook )',
@@ -41,8 +42,8 @@ export function Skills({ isEn }: { isEn: boolean }) {
       id: 3,
       title: 'Blockchain',
       icon: 'blockchain',
-      data: ['Solidity', 'Blockchain', 'Ethereum'],
-      note : "I am learning and junior in this field"
+      data: ['Solidity', 'Blockchain', 'Ethereum', 'Smart Contract'],
+      note: 'I am learning and junior in this field',
     },
     {
       id: 4,
