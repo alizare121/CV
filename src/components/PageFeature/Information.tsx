@@ -19,7 +19,7 @@ export function Information() {
             {messages.call}
           </Button>
         </Link>
-        <a target='_blank' href='/Ali Zare CV.v1.pdf'>
+        <a target='_blank' href='/AliZareCV.pdf'>
           <Button className='text-pink border-pink rounded-2xl text-xs px-8'>
             {messages.cv}
           </Button>
