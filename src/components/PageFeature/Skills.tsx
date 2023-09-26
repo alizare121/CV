@@ -21,8 +21,8 @@ export function Skills({ isEn }: { isEn: boolean }) {
         'State Management : Redux(thunk), Context Api, MobX, Recoil',
         'HTML, CSS, SASS, Style-jsx, emotion, Post-css',
         'Bootstrap, Material-Ui, Ant Design, Styled-Components, tailwind',
-        'Test : Unit Test (jest), Integration Test, End to End Test',
-        'Webpack , Vite.js'
+        'Test : Unit Test (jest), Integration Test(jest), End to End Test(puppeteer)',
+        'Webpack , Vite.js',
       ],
     },
     {
