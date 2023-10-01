@@ -15,6 +15,13 @@ body {
 }
 
 @font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato.ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'IRANSans';
   src: url('/fonts/IRANSans.ttf');
   font-style: normal;
@@ -38,7 +45,7 @@ html[lang='en'] {
   span,
   strong,
   p {
-    font-family: 'Times New Roman';
+    font-family: 'Lato';
   }
 }
 
