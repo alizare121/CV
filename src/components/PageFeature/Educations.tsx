@@ -68,13 +68,13 @@ export function Educations({ isEn }: { isEn: boolean }) {
             </div>
           </div>
         </div>
-        <div className='container-bg-edu mt-[-7rem]'>
+        <div className='container-bg-edu mt-[-8rem]'>
           <Image
             src={personal2}
             alt='ali'
             width={350}
             height={200}
-            className={`personal-image ${scale}`}
+            className={`personal-image ${scale} mt-[8rem] mr-[1.7rem]`}
           />
           <div className='custom-bg-edu bg-lightNavy'></div>
         </div>
