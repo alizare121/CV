@@ -1,5 +1,6 @@
 import { useAppContext, useRouter, useEffect } from '@utils';
 import {
+  Summary,
   WorkExperiences,
   Skills,
   Educations,
@@ -46,6 +47,7 @@ export default function Home() {
         <section className='bg-lightBlue mt-4 py-20 rounded-lg px-20 flex flex-col relative'>
           <Information />
           <SocialMedia />
+          <Summary />
           <WorkExperiences />
           <Skills isEn={isEn} />
           <Educations isEn={isEn} />

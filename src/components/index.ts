@@ -16,3 +16,4 @@ export { Educations } from './PageFeature/Educations';
 export { AboutMe } from './PageFeature/AboutMe';
 export { SocialMedia } from './PageFeature/SocialMedia';
 export { Information } from './PageFeature/Information';
+export { Summary } from './PageFeature/Summary';
