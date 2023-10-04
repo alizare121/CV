@@ -11,7 +11,7 @@ export function Summary() {
         alt='ali'
         width={400}
         height={300}
-        className='mt-[-9rem]'
+        className='mt-[-14rem]'
       />
       <div className='bg-white flex flex-col w-full rounded-lg p-8 shadow-md'>
         <span className='text-justify text-navy'>{messages.summary}</span>
