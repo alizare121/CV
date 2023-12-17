@@ -20,6 +20,7 @@ export function Header() {
       <meta property='og:description' content={description} />
       <meta property='og:type' content='website' />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="/dev-icon.png" />
     </Head>
   );
 }
