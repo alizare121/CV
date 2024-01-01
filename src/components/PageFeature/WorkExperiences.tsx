@@ -6,6 +6,7 @@ import tse from '../../assets/images/tse.png';
 import banimood from '../../assets/images/banimode.jpeg';
 import i1st from '../../assets/images/1st.jpeg';
 import iNet from '../../assets/images/inet.png';
+import charisma from '../../assets/images/charisma.jpeg'
 export function WorkExperiences() {
   const { messages } = useAppContext();
   return (
@@ -18,13 +19,30 @@ export function WorkExperiences() {
           <span className='text-pink'>{messages.workSummeryInfo}</span>
         </div>
         <div className='flex flex-col mx-10 mt-10 '>
-          <div className='flex flex-row'>
+        <div className='flex flex-row'>
+            <Image
+              src={charisma}
+              alt='charisma'
+              width={90}
+              height={50}
+              className='object-contain animate-pulse'
+            />
+            <div className='flex flex-col ms-2'>
+              <span className='text-xl text-navy font-bold'>
+                {messages.charismaJobTitle}
+              </span>
+              <span className='text-pink'>{messages.charismaJobDate}</span>
+              <span className='text-lightNavy'>{messages.charismaJobInfo}</span>
+            </div>
+          </div>
+
+          <div className='flex flex-row mt-8'>
             <Image
               src={tse}
               alt='tse'
               width={70}
               height={40}
-              className='object-contain me-7'
+              className='object-contain mx-5'
             />
             <div className='flex flex-col ms-2'>
               <span className='text-xl text-navy font-bold'>

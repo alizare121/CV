@@ -20,7 +20,7 @@ export const Particle = () => {
         params={{
           particles: {
             number: {
-              value: 7,
+              value: 4,
               density: { enable: true, value_area: 800 },
             },
             shape: {

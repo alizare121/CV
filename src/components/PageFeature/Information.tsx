@@ -9,7 +9,7 @@ export function Information() {
       <span className='text-navy text-lg font-bold'>
         <span className='text-pink'>{messages.hi}</span> {messages.name}
       </span>
-      <span className='text-4xl text-navy font-bold my-2'>
+      <span className='text-4xl text-navy font-bold my-2 animate-pulse'>
         {messages.jobTitle}
       </span>
       <span className='text-lightNavy'>{messages.jobInfo}</span>
