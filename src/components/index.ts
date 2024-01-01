@@ -8,6 +8,7 @@ export { Image, Link };
 export { Slider } from './atoms/Slider';
 export { Icon } from './atoms/Icon';
 export { Header } from './atoms/Header';
+export {Particle} from './atoms/Particles'
 
 // page feature
 export { WorkExperiences } from './PageFeature/WorkExperiences';

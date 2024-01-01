@@ -10,6 +10,7 @@ import {
   Header,
   Switch,
   Link,
+  Particle
 } from '@components';
 
 export default function Home() {
@@ -53,6 +54,7 @@ export default function Home() {
           <Educations isEn={isEn} />
           <AboutMe />
         </section>
+        <Particle />
       </main>
     </>
   );
