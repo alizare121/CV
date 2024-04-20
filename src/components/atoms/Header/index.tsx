@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useRouter } from '@utils';
 
 export function Header() {
   const router = useRouter();
