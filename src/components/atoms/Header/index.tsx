@@ -1,9 +1,12 @@
 import Head from 'next/head';
 
 export function Header() {
-  const title = 'Ali Zare - Software Developer Resume';
-  const description =
-    'Explore the resume and professional portfolio of Ali Zare, showcasing skills, experiences, and projects.';
+  const router = useRouter();
+  const isEn = router?.locale === 'en';
+  
+  const title = isEn ? 'Ali Zare - Software Developer Resume' : 'علی زارع - رزومه توسعه دهنده نرم افزار';
+  const description =  isEn ?
+    'Explore the resume and professional portfolio of Ali Zare, showcasing skills, experiences, and projects.' : 'رزومه و مجموعه حرفه ای علی زارع را با نمایش مهارت ها، تجربیات و پروژه ها بررسی کنید.';
   return (
     <Head>
       <title>{title}</title>
