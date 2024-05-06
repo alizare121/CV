@@ -7,10 +7,10 @@ export function Header() {
   const enDescription = 'Explore the resume and professional portfolio of Ali Zare, showcasing skills, experiences, and projects.';
   return (
     <Head>
-      <title lang="fa">{title}</title>
-      <title lang="en">{title}</title>
-      <meta name='description' content={description} lang="fa" />
-      <meta name='description' content={description} lang="en" />
+      <title lang="fa">{faTitle}</title>
+      <title lang="en">{enTitle}</title>
+      <meta name='description' content={faDescription} lang="fa" />
+      <meta name='description' content={enDescription} lang="en" />
       <meta name='viewport' content='width=1224' />
       <link rel='icon' href='/dev-icon.png' />
       <link
