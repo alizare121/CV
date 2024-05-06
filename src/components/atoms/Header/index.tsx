@@ -19,8 +19,8 @@ export function Header() {
         as='font'
         crossOrigin='anonymous'
       />
-      <meta property='og:title' content={title} />
-      <meta property='og:description' content={description} />
+      <meta property='og:title' content={enTitle} />
+      <meta property='og:description' content={enDescription} />
       <meta property='og:type' content='website' />
       <meta property='og:image' content="https://www.aliiz.ir/dev-icon.png" />
       <meta name="twitter:card" content="summary_large_image" />
