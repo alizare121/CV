@@ -1,17 +1,16 @@
 import Head from 'next/head';
-import { useRouter } from '@utils';
 
 export function Header() {
-  const router = useRouter();
-  const isEn = router?.locale === 'en';
-  
-  const title = isEn ? 'Ali Zare - Software Developer Resume' : 'علی زارع - رزومه توسعه دهنده نرم افزار';
-  const description =  isEn ?
-    'Explore the resume and professional portfolio of Ali Zare, showcasing skills, experiences, and projects.' : 'رزومه و مجموعه حرفه ای علی زارع را با نمایش مهارت ها، تجربیات و پروژه ها بررسی کنید.';
+  const faTitle = 'علی زارع - رزومه توسعه دهنده نرم افزار';
+  const enTitle =  'Ali Zare - Software Developer Resume';
+  const faDescription = 'رزومه و مجموعه حرفه ای علی زارع را با نمایش مهارت ها، تجربیات و پروژه ها بررسی کنید.';
+  const enDescription = 'Explore the resume and professional portfolio of Ali Zare, showcasing skills, experiences, and projects.';
   return (
     <Head>
-      <title>{title}</title>
-      <meta name='description' content={description} />
+      <title lang="fa">{title}</title>
+      <title lang="en">{title}</title>
+      <meta name='description' content={description} lang="fa" />
+      <meta name='description' content={description} lang="en" />
       <meta name='viewport' content='width=1224' />
       <link rel='icon' href='/dev-icon.png' />
       <link
