@@ -32,12 +32,13 @@ export function SocialMedia() {
   ];
   return (
     <div className='bg-white absolute  py-2 px-4 top-40 rounded-s-2xl flex flex-row end-0'>
-      {socialData.map(({ link, icon, id, color }) => {
+      {socialData.map(({ link, icon, id, color, title }) => {
         return (
           <a
             key={id}
             target='_blank'
             href={link}
+            aria-label={title}
             className='mr-1 hover:scale-110 hover:bg-indigo-500 duration-300'
           >
             <Icon iconName={icon} className={`text-3xl ${color} `} />

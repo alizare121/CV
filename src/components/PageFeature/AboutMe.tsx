@@ -10,8 +10,8 @@ export function AboutMe() {
         src={ali1}
         alt='ali'
         width={200}
-        height={200}
-        className='opacity-70 rounded-2xl my-8 h-[15rem]'
+        height={280}
+        className='opacity-70 rounded-2xl my-8'
       />
       <div className='flex bg-white rounded-lg px-8 py-4 shadow-md flex-1 mx-8 min-w-[25rem] min-h-[18rem]'>
         <span className='leading-8 text-navy text-lg text-justify'>
@@ -23,7 +23,7 @@ export function AboutMe() {
         alt='ali'
         width={200}
         height={280}
-        className='opacity-70 rounded-2xl my-8 h-[15rem]'
+        className='opacity-70 rounded-2xl my-8'
       />
     </div>
   );

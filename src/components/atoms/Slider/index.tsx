@@ -27,13 +27,13 @@ export function Slider({ data }: { data: SkillsInterface[] }) {
         })}
       </div>
       <div className='bg-white flex-1 flex flex-col justify-between my-14 ms-10 rounded-lg p-4 shadow-md'>
-        <div>
-          {itemData?.map((item) => (
-            <li className='text-pink mb-1'>
+        <ul>
+          {itemData?.map((item, i) => (
+            <li key={i} className='text-pink mb-1'>
               <span className='text-navy'>{item}</span>
             </li>
           ))}
-        </div>
+        </ul>
         <span className='text-pink text-center text-lg mb-8'>{note}</span>
       </div>
     </div>
