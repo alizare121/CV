@@ -10,7 +10,7 @@ import {
   Header,
   Switch,
   Link,
-  Particle
+  Particle,
 } from '@components';
 
 export default function Home() {
@@ -30,21 +30,23 @@ export default function Home() {
     <>
       <Header />
       <main className='p-4'>
-        <Link
-          className='flex items-center'
-          href={router.asPath}
-          locale={languageCheck}
-          passHref
-          onClick={onChangeLang}
-        >
-          <Switch
-            defaultChecked
-            onChange={onChangeLang}
-            unCheckedChildren='EN'
-            checkedChildren='FA'
-            style={{ backgroundColor: '#394562' }}
-          />
-        </Link>
+        <div className='flex items-center'>
+          <Link
+            href={router.asPath}
+            locale={languageCheck}
+            passHref
+            onClick={onChangeLang}
+          >
+            <Switch
+              defaultChecked
+              onChange={onChangeLang}
+              unCheckedChildren='EN'
+              checkedChildren='FA'
+              style={{ backgroundColor: '#394562', width: '50px' }}
+            />
+          </Link>
+        </div>
+
         <section className='bg-lightBlue mt-4 py-20 rounded-lg px-20 flex flex-col relative'>
           <Information />
           <SocialMedia />
