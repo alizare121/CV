@@ -13,6 +13,7 @@ export function Summary() {
         height={300}
         className='mt-[-14rem]'
         priority
+        sizes="(max-width: 600px) 100vw, 50vw" 
       />
       <div className='bg-white flex flex-col w-full rounded-lg p-8 shadow-md'>
         <span className='text-justify text-navy'>{messages.summary}</span>
