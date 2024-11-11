@@ -44,6 +44,16 @@ html[lang='fa'] {
 html[lang='en'] {
   span,
   strong,
+  ul,
+  p {
+    font-family: 'Lato';
+  }
+}
+
+html[lang='de'] {
+  span,
+  strong,
+  ul,
   p {
     font-family: 'Lato';
   }

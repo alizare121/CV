@@ -1,5 +1,5 @@
 // lib component
-export { Tooltip, Switch } from 'antd';
+export { Tooltip, Switch , Select } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
 export { Image, Link };

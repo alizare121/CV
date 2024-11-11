@@ -8,7 +8,7 @@ export const LanguageWatcher = () => {
     setLang: async ({ locale, document }: any) => {
       try {
         const html: any = document.getElementsByTagName('html')[0];
-        const HTMLDirection: string = locale === 'en' ? 'ltr' : 'rtl';
+        const HTMLDirection: string = locale === 'fa' ? 'rtl' : 'ltr';
         const res = await Object.assign(
           {},
           require(`../../assets/dictionary/${locale}.json`)

@@ -5,7 +5,7 @@ import { useAppContext } from '@utils';
 import { SkillsInterface } from '@enums';
 export function Skills({ isEn }: { isEn: boolean }) {
   const { messages } = useAppContext();
-  const scale = isEn ? '' : 'scale-x-[-1]';
+  const scale = !isEn ? '' : 'scale-x-[-1]';
 
   const data: SkillsInterface[] = [
     {

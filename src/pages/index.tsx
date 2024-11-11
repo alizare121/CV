@@ -1,4 +1,4 @@
-import { useAppContext, useRouter, useEffect } from '@utils';
+import { useAppContext, useRouter, useEffect } from "@utils";
 import {
   Summary,
   WorkExperiences,
@@ -8,10 +8,9 @@ import {
   SocialMedia,
   Information,
   Header,
-  Switch,
-  Link,
   Particle,
-} from '@components';
+  Select,
+} from "@components";
 
 export default function Home() {
   const { setLang } = useAppContext();
@@ -23,31 +22,31 @@ export default function Home() {
 
   useEffect(onChangeLang, [router.locale]);
 
-  const languageCheck: string = router?.locale === 'en' ? 'fa' : 'en';
-  const isEn = router?.locale === 'en';
+  const isEn = router?.locale === "en" || router?.locale === "de";
+
+  const handleChange = (value: string) => {
+    router.push(router.asPath, router.asPath, { locale: value });
+  };
 
   return (
     <>
       <Header />
-      <main className='p-4'>
-        <div className='flex items-center'>
-          <Link
-            href={router.asPath}
-            locale={languageCheck}
-            passHref
-            onClick={onChangeLang}
-          >
-            <Switch
-              defaultChecked
-              onChange={onChangeLang}
-              unCheckedChildren='EN'
-              checkedChildren='FA'
-              style={{ backgroundColor: '#394562', width: '50px' }}
-            />
-          </Link>
+      <main className="p-4 ">
+        <div className="flex items-center">
+          <Select
+            defaultValue="English"
+            style={{ width: 100 }}
+            onChange={handleChange}
+            options={[
+              { value: "en", label: "English" },
+              { value: "de", label: "Deutsch" },
+              { value: "fa", label: "فارسی" },
+            ]}
+            size="middle"
+          />
         </div>
 
-        <section className='bg-lightBlue mt-4 py-20 rounded-lg px-20 flex flex-col relative'>
+        <section className="bg-lightBlue mt-4 py-20 rounded-lg px-20 flex flex-col relative">
           <Information />
           <SocialMedia />
           <Summary />

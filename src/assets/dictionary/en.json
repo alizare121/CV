@@ -2,21 +2,37 @@
   "hi": "Hello ,",
   "name": "Im Ali Zare",
   "jobTitle": "Software Engineer",
-  "jobInfo": "Senior Frontend Developer | Blockchain Researcher",
+  "jobInfo": "Senior Frontend Developer",
   "workExperiences": "Work Experiences",
   "workSummeryInfo": "I have more than 9 years of work experience",
   "charismaJobTitle": "Senior Frontend Developer at Charisma Financial Group",
   "charismaJobDate": "Nov 2023 - Present",
-  "charismaJobInfo": "I am currently working at Charisma Financial Group and working on the Charisma website and gift card project using React and Next.js. In these projects, I utilize React and Next.js frameworks to develop and optimize websites.",
+  "charismaJobInfo": [
+    "Redesigned Charisma’s website and gift card system using React and Next.js, increasing customer retention by 30% and gift card sales by 20%.",
+    "Revamped the codebase structure and application architecture, reducing debugging time by 30 hours monthly",
+    "Developed clean, modular code based on best practices, reducing future errors by 35%",
+    "Optimized load times by 45% through code-splitting and lazy loading techniques."
+  ],
   "tseJobTitle": "Senior Frontend Developer at Tehran Stock Exchange",
   "tseJobDate": "Apr 2020 - Nov 2023",
-  "tseJobInfo": "I was the first person to introduce and utilize React JS and Next JS technologies in this company. By utilizing React JS and Next JS, I was able to enhance and improve the performance of web application projects. As a leader of the front-end development team, I facilitated the improvement of development processes and collaboration within the team. Provided necessary training and guidance to the team on using React JS and Next JS, as well as implementing best practices and design patterns in software development.",
+  "tseJobInfo": [
+    "Led frontend team in adopting React and Next.js, boosting deployment frequency by 40%.",
+    "Implemented Monorepo architecture to reduce code duplication and enhance team productivity.",
+    "Enhanced page load speeds by 60% and reduced code size by 25% with Next.js",
+    "Accelerated backend response times by 35%, enabling faster access to financial data for users."
+  ],
   "baniJobTitle": "Frontend (Mobile) Developer at Banimode",
   "baniJobDate": "Jan 2020 - Apr 2020",
-  "baniJobInfo": "During my work experience at Banimode, I developed the Banimode mobile app using React Native. I analyzed app crashes using Sentry, resolved bugs on different devices, and improved the user experience by monitoring user behaviors with Firebase. I provided solutions to the UX team to enhance the app's usability.",
+  "baniJobInfo": [
+    "Developed and maintained the Banimode mobile app with React Native, decreasing crash rates by 40% and enhancing usability by 25%."
+  ],
   "stJobTitle": "Frontend (Mobile) Developer at First Eurasia E-Commerce",
   "stJobDate": "July 2018 - Jan 2020 ",
-  "stJobInfo": "In my role at CompanyFirst Eurasia E-commerce, I served as the Front-end Team Leader and successfully completed projects such as FinTech and CRM using React Native. These projects were deployed on various platforms including mobile, web, desktop, and PWA. In addition, I mentored three interns during this period, providing guidance, training, and support to enhance their performance and professional development.",
+  "stJobInfo": [
+    "Led a cross-functional team to develop multi-platform FinTech and CRM applications, increasing user engagement by 40% and reducing development time by 25%.",
+    "Implemented responsive design for improved UX and compatibility across devices.",
+    "Integrated real-time data synchronization and analytics tools, enhancing user experience and enabling data-driven interactions."
+  ],
   "expertise": "Expertise",
   "skills": "Skills",
   "qualification": "Qualification",
@@ -46,5 +62,5 @@
   "softSkill9": "Mentoring",
   "call": "Call Me",
   "cv": "Get CV",
-  "summary": "I am a front-end developer with over 6 years of experience in this field. My expertise lies in JavaScript and TypeScript, and I have been able to utilize these languages in various projects. Additionally, I have strong experience in working with React and Next.js frameworks and have been able to create visually appealing and efficient user interfaces using these tools. Throughout my career, I have worked as a frontend development team lead in multiple projects, successfully coordinating cross-functional development teams and acting as a team leader. I possess excellent communication and collaboration skills with designers, backend developers, and project managers, and always prioritize the quality and performance of the applications while adhering to coding standards. Furthermore, I am constantly learning and improving my skills to deliver the best performance in future teams and projects. I have a strong passion for working in the field of blockchain programming, and I am currently learning Solidity language and smart contract development. "
+  "summary": "Skilled frontend developer with over 6 years of experience specializing in JavaScript, TypeScript, and modern frameworks like React and Next.js. Experienced in enhancing code quality and driving technical transformations across multiple projects. Demonstrated ability to lead front-end architecture redesigns and performance optimizations to support business growth. Known for creating intuitive, high-performance UIs and leading cross-functional teams to achieve significant results. Proven record of enhancing UX and optimizing performance, with a deep commitment to continuous learning and delivering high-quality, scalable solutions."
 }
