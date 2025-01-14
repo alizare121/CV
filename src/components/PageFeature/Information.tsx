@@ -14,11 +14,11 @@ import reactNativeIcon from '../../assets/images/skill/react-native.png';
 export function Information() {
   const { messages } = useAppContext();
 
-  const [shuffledSkills, setShuffledSkills] = useState([]);
+  const [shuffledSkills, setShuffledSkills] = useState<any>([]);
 
   useEffect(() => {
     // Shuffle skills randomly on mount
-    const shuffled = [...skills].sort(() => Math.random() - 0.5);
+    const shuffled: any = [...skills].sort(() => Math.random() - 0.5);
     setShuffledSkills(shuffled);
   }, []);
 
@@ -52,7 +52,7 @@ export function Information() {
         </a>
       </div>
       <div className='w-full flex justify-center'>
-        {shuffledSkills.map((skill, index) => (
+        {shuffledSkills.map((skill: any, index: number) => (
           <div
             key={index}
             className='flex flex-row gap-4 skill-item bg-lightGray font-bold text-black px-6 h-16 rounded-full flex justify-center items-center absolute z-50'
@@ -61,6 +61,7 @@ export function Information() {
               animationDelay: `${index * 0.5}s`, // Stagger the animations
             }}>
             <Image
+              alt='skill-icon'
               src={skill.image}
               width={40}
               height={40}
@@ -76,9 +77,7 @@ export function Information() {
             alt='ali'
             width={400}
             height={300}
-            className=''
             priority
-            //sizes='(max-width: 600px) 100vw, 50vw'
             className={`personal-image mt-[-5.5rem]`}
           />
           <div className='custom-bg-skill  bg-yellow mb-[-50px]'></div>
