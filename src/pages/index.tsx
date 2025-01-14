@@ -1,4 +1,4 @@
-import { useAppContext, useRouter, useEffect } from "@utils";
+import { useAppContext, useRouter, useEffect } from '@utils';
 import {
   Summary,
   WorkExperiences,
@@ -10,7 +10,7 @@ import {
   Header,
   Particle,
   Select,
-} from "@components";
+} from '@components';
 
 export default function Home() {
   const { setLang } = useAppContext();
@@ -22,7 +22,7 @@ export default function Home() {
 
   useEffect(onChangeLang, [router.locale]);
 
-  const isEn = router?.locale === "en" || router?.locale === "de";
+  const isEn = router?.locale === 'en' || router?.locale === 'de';
 
   const handleChange = (value: string) => {
     router.push(router.asPath, router.asPath, { locale: value });
@@ -31,22 +31,26 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="p-4 ">
-        <div className="flex items-center">
-          <Select
-            defaultValue="English"
-            style={{ width: 100 }}
-            onChange={handleChange}
-            options={[
-              { value: "en", label: "English" },
-              { value: "de", label: "Deutsch" },
-              { value: "fa", label: "فارسی" },
-            ]}
-            size="middle"
-          />
-        </div>
-
-        <section className="bg-lightBlue mt-4 py-20 rounded-lg px-20 flex flex-col relative">
+      <main>
+        <section className='bg-black py-20 px-28 flex flex-col relative'>
+          <section class='wrapper'>
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+          </section>
+          <div className='absolute top-8 start-8'>
+            <Select
+              defaultValue='English'
+              style={{ width: 100 }}
+              onChange={handleChange}
+              options={[
+                { value: 'en', label: 'English' },
+                { value: 'de', label: 'Deutsch' },
+                { value: 'fa', label: 'فارسی' },
+              ]}
+              size='middle'
+            />
+          </div>
           <Information />
           <SocialMedia />
           <Summary />
@@ -55,7 +59,6 @@ export default function Home() {
           <Educations isEn={isEn} />
           <AboutMe />
         </section>
-        <Particle />
       </main>
     </>
   );

@@ -12,6 +12,8 @@ module.exports = {
     extend: {},
     colors: {
       white: '#fff',
+      lightGray: '#cecece',
+      darkGray: '#181818',
       black: '#000',
       navy: '#394562',
       pink: '#ea4c89',
@@ -19,6 +21,7 @@ module.exports = {
       lightNavy: '#9ba2c6',
       blue: 'blue',
       lightPink: '#ffb6c1',
+      yellow: '#EFAE02',
     },
   },
   plugins: [],
