@@ -180,7 +180,7 @@ export function Skills({ isEn }: { isEn: boolean }) {
           {messages.skills}
         </span>
       </div>
-      <div className='mt-8 flex flex-wrap gap-4'>
+      <div className='mt-8 flex flex-wrap gap-4 justify-center'>
         {badges.map((badge, index) => (
           <img
             key={index}
