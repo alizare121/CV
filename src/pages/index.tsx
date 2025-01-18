@@ -1,4 +1,4 @@
-import { useAppContext, useRouter, useEffect } from '@utils';
+import { useAppContext, useRouter, useEffect, useState } from '@utils';
 import {
   Summary,
   WorkExperiences,
@@ -18,6 +18,12 @@ import { GetStaticPropsContext } from 'next';
 export default function Home({ messages }: PageInterface) {
   const { setLang } = useAppContext();
   const router = useRouter();
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleDropdownVisibleChange = (open: boolean) => {
+    setIsOpen(open);
+  };
 
   const onChangeLang = () => {
     setLang?.({ locale: router.locale, document });
@@ -58,7 +64,8 @@ export default function Home({ messages }: PageInterface) {
               size='middle'
               aria-label={langLabel}
               aria-haspopup='true'
-              aria-expanded='false'
+              aria-expanded={isOpen ? 'true' : 'false'}
+              onDropdownVisibleChange={handleDropdownVisibleChange}
             />
           </div>
           <Information messages={messages} />
