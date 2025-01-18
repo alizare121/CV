@@ -1,4 +1,5 @@
-import { useAppContext, useEffect, useState } from '@utils';
+import { useEffect, useState } from '@utils';
+import { PageInterface } from '@enums';
 import { Button } from 'antd';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -11,9 +12,7 @@ import nextIcon from '../../assets/images/skill/next-js.svg';
 import tailwindIcon from '../../assets/images/skill/tailwind.svg';
 import reactNativeIcon from '../../assets/images/skill/react-native.png';
 
-export function Information() {
-  const { messages } = useAppContext();
-
+export function Information({ messages }: PageInterface) {
   const [shuffledSkills, setShuffledSkills] = useState<any>([]);
 
   useEffect(() => {
@@ -59,7 +58,8 @@ export function Information() {
             style={{
               transform: `translateX(${skill.x}) translateY(${skill.y})`,
               animationDelay: `${index * 0.5}s`, // Stagger the animations
-            }}>
+            }}
+          >
             <Image
               alt='skill-icon'
               src={skill.image}

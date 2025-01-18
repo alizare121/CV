@@ -8,11 +8,14 @@ import {
   SocialMedia,
   Information,
   Header,
-  Particle,
   Select,
 } from '@components';
+import fs from 'fs';
+import path from 'path';
+import { PageInterface } from '@enums';
+import { GetStaticPropsContext } from 'next';
 
-export default function Home() {
+export default function Home({ messages }: PageInterface) {
   const { setLang } = useAppContext();
   const router = useRouter();
 
@@ -21,8 +24,6 @@ export default function Home() {
   };
 
   useEffect(onChangeLang, [router.locale]);
-
-  const isEn = router?.locale === 'en' || router?.locale === 'de';
 
   const handleChange = (value: string) => {
     router.push(router.asPath, router.asPath, { locale: value });
@@ -51,15 +52,35 @@ export default function Home() {
               size='middle'
             />
           </div>
-          <Information />
+          <Information messages={messages} />
           <SocialMedia />
-          <Summary />
-          <WorkExperiences />
-          <Skills isEn={isEn} />
-          <Educations isEn={isEn} />
-          <AboutMe />
+          <Summary messages={messages} />
+          <WorkExperiences messages={messages} />
+          <Skills messages={messages} />
+          <Educations messages={messages} />
+          <AboutMe messages={messages} />
         </section>
       </main>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  const lang = locale || 'en';
+
+  const filePath = path.join(
+    process.cwd(),
+    'src',
+    'assets',
+    'dictionary',
+    `${lang}.json`
+  );
+
+  const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+  return {
+    props: {
+      messages: jsonData,
+    },
+  };
 }

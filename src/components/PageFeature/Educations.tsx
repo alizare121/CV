@@ -1,13 +1,9 @@
 import Image from 'next/image';
-import { useAppContext, useEffect } from '@utils';
-import personal2 from '../../assets/images/2.png';
+import { PageInterface } from '@enums';
 import azad from '../../assets/images/azad.png';
 import amol from '../../assets/images/amol.png';
 import beh from '../../assets/images/beh.png';
-export function Educations({ isEn }: { isEn: boolean }) {
-  const { messages } = useAppContext();
-  const scale = !isEn ? '' : 'scale-x-[-1]';
-
+export function Educations({ messages }: PageInterface) {
   const items = [
     {
       img: azad,
@@ -44,7 +40,8 @@ export function Educations({ isEn }: { isEn: boolean }) {
               className={`flex flex-row bg-white rounded-lg px-8 py-4 mt-3 shadow-md edu-item`}
               style={{
                 animationDelay: `${index * 0.3}s`,
-              }}>
+              }}
+            >
               <Image
                 src={item.img}
                 alt='school'

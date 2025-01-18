@@ -1,10 +1,5 @@
-import Image from 'next/image';
-import personal2 from '../../assets/images/dev1.png';
-import { Slider } from '@components';
-import { useAppContext } from '@utils';
-import { SkillsInterface } from '@enums';
-export function Skills({ isEn }: { isEn: boolean }) {
-  const { messages } = useAppContext();
+import { PageInterface } from '@enums';
+export function Skills({ messages }: PageInterface) {
 
   const badges = [
     {

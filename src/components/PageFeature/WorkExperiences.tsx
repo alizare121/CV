@@ -1,13 +1,11 @@
 import Image from 'next/image';
-import { useAppContext } from '@utils';
+import { PageInterface } from '@enums';
 import tse from '../../assets/images/tse.png';
 import banimood from '../../assets/images/banimode.jpeg';
 import i1st from '../../assets/images/1st.jpeg';
 import iNet from '../../assets/images/inet.png';
 import charisma from '../../assets/images/charisma.jpeg';
-export function WorkExperiences() {
-  const { messages } = useAppContext();
-
+export function WorkExperiences({ messages }: PageInterface) {
   return (
     <div className='flex flex-col w-full mt-12 items-center justify-center'>
       <span className='text-4xl text-yellow font-bold'>
@@ -38,9 +36,10 @@ export function WorkExperiences() {
             </div>
             <div className='flex flex-col ms-2'>
               <ul className='list-disc ml-12'>
-                {messages.charismaJobInfo?.map((item: string) => (
-                  <li>{item}</li>
-                ))}
+                {Array.isArray(messages.charismaJobInfo) &&
+                  messages.charismaJobInfo?.map((item: string) => (
+                    <li>{item}</li>
+                  ))}
               </ul>
             </div>
           </div>
@@ -65,9 +64,8 @@ export function WorkExperiences() {
             </div>
             <div className='flex flex-col ms-2 mt-4'>
               <ul className='list-disc ml-12'>
-                {messages.tseJobInfo?.map((item: string) => (
-                  <li>{item}</li>
-                ))}
+                {Array.isArray(messages.tseJobInfo) &&
+                  messages.tseJobInfo?.map((item: string) => <li>{item}</li>)}
               </ul>
             </div>
           </div>
@@ -92,9 +90,8 @@ export function WorkExperiences() {
             </div>
             <div className='flex flex-col ms-2 mt-4'>
               <ul className='list-disc ml-12'>
-                {messages.baniJobInfo?.map((item: string) => (
-                  <li>{item}</li>
-                ))}
+                {Array.isArray(messages.baniJobInfo) &&
+                  messages.baniJobInfo?.map((item: string) => <li>{item}</li>)}
               </ul>
             </div>
           </div>
@@ -119,9 +116,8 @@ export function WorkExperiences() {
             </div>
             <div className='flex flex-col ms-2 mt-4'>
               <ul className='list-disc ml-12'>
-                {messages.stJobInfo?.map((item: string) => (
-                  <li>{item}</li>
-                ))}
+                {Array.isArray(messages.stJobInfo) &&
+                  messages.stJobInfo?.map((item: string) => <li>{item}</li>)}
               </ul>
             </div>
           </div>

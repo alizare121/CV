@@ -1,9 +1,8 @@
 import { Image } from '@components';
-import { useAppContext } from '@utils';
+import { PageInterface } from '@enums';
 import ali1 from '../../assets/images/ali4.png';
 import ali2 from '../../assets/images/ali3.png';
-export function AboutMe() {
-  const { messages } = useAppContext();
+export function AboutMe({ messages }: PageInterface) {
   return (
     <div className='flex flex-row mt-14 px-10 items-center justify-center bg-darkGray rounded-2xl '>
       <Image
