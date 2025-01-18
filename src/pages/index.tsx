@@ -19,12 +19,6 @@ export default function Home({ messages }: PageInterface) {
   const { setLang } = useAppContext();
   const router = useRouter();
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleDropdownVisibleChange = (open: boolean) => {
-    setIsOpen(open);
-  };
-
   const onChangeLang = () => {
     setLang?.({ locale: router.locale, document });
   };
@@ -40,10 +34,6 @@ export default function Home({ messages }: PageInterface) {
     { value: 'de', label: 'Deutsch' },
     { value: 'fa', label: 'فارسی' },
   ];
-
-  const langLabel = langOptions.find(
-    ({ value }) => value === router.locale
-  )?.label;
 
   return (
     <>
@@ -62,10 +52,6 @@ export default function Home({ messages }: PageInterface) {
               onChange={handleChange}
               options={langOptions}
               size='middle'
-              aria-label={langLabel}
-              aria-haspopup='true'
-              aria-expanded={isOpen ? 'true' : 'false'}
-              onDropdownVisibleChange={handleDropdownVisibleChange}
             />
           </div>
           <Information messages={messages} />

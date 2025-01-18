@@ -38,9 +38,9 @@ export function Information({ messages }: PageInterface) {
         {messages.jobTitle}
       </span>
       <span className='text-white text-2xl'>{messages.jobInfo}</span>
-      <div className='mt-4 flex flex-row gap-4'>
+      <div className='mt-4 flex flex-row gap-6'>
         <Link href='tel:+989101011426'>
-          <Button className='me-6 bg-yellow text-black rounded-full border-0 text-lg px-16 py-8 flex justify-center items-center'>
+          <Button className='bg-yellow text-black rounded-full border-0 text-lg px-16 py-8 flex justify-center items-center'>
             {messages.call}
           </Button>
         </Link>
