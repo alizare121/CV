@@ -35,6 +35,10 @@ export default function Home({ messages }: PageInterface) {
     { value: 'fa', label: 'فارسی' },
   ];
 
+  const langLabel = langOptions.find(
+    ({ value }) => value === router.locale
+  )?.label;
+
   return (
     <>
       <Header />
@@ -52,7 +56,7 @@ export default function Home({ messages }: PageInterface) {
               onChange={handleChange}
               options={langOptions}
               size='middle'
-              aria-label='selected language'
+              aria-label={langLabel}
               aria-haspopup='true'
               aria-expanded='false'
             />
