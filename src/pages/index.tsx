@@ -29,6 +29,12 @@ export default function Home({ messages }: PageInterface) {
     router.push(router.asPath, router.asPath, { locale: value });
   };
 
+  const langOptions = [
+    { value: 'en', label: 'English' },
+    { value: 'de', label: 'Deutsch' },
+    { value: 'fa', label: 'فارسی' },
+  ];
+
   return (
     <>
       <Header />
@@ -44,12 +50,11 @@ export default function Home({ messages }: PageInterface) {
               defaultValue='English'
               style={{ width: 100 }}
               onChange={handleChange}
-              options={[
-                { value: 'en', label: 'English' },
-                { value: 'de', label: 'Deutsch' },
-                { value: 'fa', label: 'فارسی' },
-              ]}
+              options={langOptions}
               size='middle'
+              aria-label='selected language'
+              aria-haspopup='true'
+              aria-expanded='false'
             />
           </div>
           <Information messages={messages} />
