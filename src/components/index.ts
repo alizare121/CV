@@ -7,6 +7,7 @@ export { Image, Link };
 // atoms component
 export { Icon } from './atoms/Icon';
 export { Header } from './atoms/Header';
+export { Stars } from './atoms/Stars';
 
 // page feature
 export { WorkExperiences } from './PageFeature/WorkExperiences';

@@ -1,4 +1,4 @@
-import { useAppContext, useRouter, useEffect, useState } from '@utils';
+import { useAppContext, useRouter, useEffect } from '@utils';
 import {
   Summary,
   WorkExperiences,
@@ -9,6 +9,7 @@ import {
   Information,
   Header,
   Select,
+  Stars,
 } from '@components';
 import fs from 'fs';
 import path from 'path';
@@ -40,22 +41,17 @@ export default function Home({ messages }: PageInterface) {
       <Header />
       <main>
         <section className='bg-black py-20 px-28 flex flex-col relative'>
-          <section className='wrapper'>
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-          </section>
-          <div className='absolute top-8 start-8'>
-            <Select
-              id='lang-select'
-              aria-label='lang-select'
-              defaultValue='English'
-              style={{ width: 100 }}
-              onChange={handleChange}
-              options={langOptions}
-              size='middle'
-            />
-          </div>
+          <Stars />
+          <Select
+            id='lang-select'
+            aria-label='lang-select'
+            defaultValue='English'
+            style={{ width: 100 }}
+            onChange={handleChange}
+            options={langOptions}
+            size='middle'
+            className='absolute top-8 start-8'
+          />
           <Information messages={messages} />
           <SocialMedia />
           <Summary messages={messages} />
