@@ -9,11 +9,12 @@ export function AboutMe({ messages }: PageInterface) {
         src={ali1}
         alt='ali'
         width={200}
-        height={280}
+        height={230}
         className='opacity-70 rounded-2xl my-8 !h-[230px]'
+        layout="intrinsic" 
       />
       <div className='flex px-8 py-4 flex-1 mx-8 min-w-[25rem] min-h-[18rem]'>
-        <span className='leading-8 text-white text-xl leading-10 text-justify'>
+        <span className='text-white text-xl leading-10 text-justify'>
           {messages.about}
         </span>
       </div>
@@ -21,8 +22,9 @@ export function AboutMe({ messages }: PageInterface) {
         src={ali2}
         alt='ali'
         width={200}
-        height={280}
+        height={230}
         className='opacity-70 rounded-2xl my-8 !h-[230px]'
+        layout="intrinsic" 
       />
     </div>
   );
