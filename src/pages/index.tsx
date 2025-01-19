@@ -47,6 +47,8 @@ export default function Home({ messages }: PageInterface) {
           </section>
           <div className='absolute top-8 start-8'>
             <Select
+              id='lang-select'
+              aria-label='lang-select'
               defaultValue='English'
               style={{ width: 100 }}
               onChange={handleChange}
