@@ -44,11 +44,11 @@ export default function Information({ messages }: PageInterface) {
             {messages.call}
           </Button>
         </Link>
-        <a target='_blank' href='/AliZareCV.pdf'>
-          <Button className='text-yellow border-yellow rounded-full text-lg px-16 py-8 flex justify-center items-center '>
+        <Link target='_blank' href='/AliZareCV.pdf'>
+          <Button className='text-yellow bg-black border-yellow rounded-full text-lg px-16 py-8 flex justify-center items-center '>
             {messages.cv}
           </Button>
-        </a>
+        </Link>
       </div>
       <div className='w-full flex justify-center'>
         {shuffledSkills.map((skill: any, index: number) => (
