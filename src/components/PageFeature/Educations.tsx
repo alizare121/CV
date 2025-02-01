@@ -28,9 +28,9 @@ export default function Educations({ messages }: PageInterface) {
     <section>
       <div className='mt-14 flex flex-col items-center justify-center'>
         <span className='text-white'>{messages.qualification}</span>
-        <span className='text-4xl text-yellow font-bold'>
+        <h4 className='text-4xl text-yellow font-bold'>
           {messages.educations}
-        </span>
+        </h4>
       </div>
       <div className='flex flex-row justify-around mt-8'>
         <div>
@@ -52,7 +52,9 @@ export default function Educations({ messages }: PageInterface) {
               <div className='flex flex-col ms-2'>
                 <span className='text-2xl font-bold'>{item.degree}</span>
                 <span className='text-darkGray'>{item.title}</span>
-                <span className='bg-yellow text-darkGray py-1 px-3 w-fit rounded-lg'>{item.date}</span>
+                <span className='bg-yellow text-darkGray py-1 px-3 w-fit rounded-lg'>
+                  {item.date}
+                </span>
               </div>
             </div>
           ))}

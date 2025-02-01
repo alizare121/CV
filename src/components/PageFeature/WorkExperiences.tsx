@@ -8,9 +8,9 @@ import charisma from '../../assets/images/charisma.jpeg';
 export default function WorkExperiences({ messages }: PageInterface) {
   return (
     <div className='flex flex-col w-full mt-12 items-center justify-center'>
-      <span className='text-4xl text-yellow font-bold'>
+      <h2 className='text-4xl text-yellow font-bold'>
         {messages.workExperiences}
-      </span>
+      </h2>
       <div className='flex flex-col items-center justify-center w-full'>
         <span className='text-white'>{messages.workSummeryInfo}</span>
       </div>

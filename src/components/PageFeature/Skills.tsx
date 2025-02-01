@@ -170,9 +170,7 @@ export default function Skills({ messages }: PageInterface) {
     <section>
       <div className='mt-20 flex flex-col items-center justify-center'>
         <span className='text-white'>{messages.expertise}</span>
-        <span className='text-4xl text-yellow font-bold'>
-          {messages.skills}
-        </span>
+        <h3 className='text-4xl text-yellow font-bold'>{messages.skills}</h3>
       </div>
       <div className='mt-8 flex flex-wrap gap-4 justify-center'>
         {badges.map((badge, index) => (
