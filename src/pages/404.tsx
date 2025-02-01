@@ -1,5 +1,4 @@
-import { Image, Link } from '@components';
-import { Button } from 'antd';
+import { Image, Link, Button } from '@components';
 export default function PageNotFound() {
   return (
     <div className='bg-lightBlue h-[95vh] m-4 flex flex-col items-center justify-center rounded-lg'>

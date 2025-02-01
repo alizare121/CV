@@ -1,6 +1,6 @@
 import { Icon } from '@components';
 
-export function SocialMedia() {
+export default function SocialMedia() {
   const socialData = [
     {
       id: 1,

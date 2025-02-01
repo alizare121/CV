@@ -5,7 +5,7 @@ import banimood from '../../assets/images/banimode.jpeg';
 import i1st from '../../assets/images/1st.jpeg';
 import iNet from '../../assets/images/inet.png';
 import charisma from '../../assets/images/charisma.jpeg';
-export function WorkExperiences({ messages }: PageInterface) {
+export default function WorkExperiences({ messages }: PageInterface) {
   return (
     <div className='flex flex-col w-full mt-12 items-center justify-center'>
       <span className='text-4xl text-yellow font-bold'>
@@ -17,7 +17,7 @@ export function WorkExperiences({ messages }: PageInterface) {
       <div className='flex flex-col w-full mt-6'>
         <div className='grid grid-cols-12 gap-4'>
           <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
-            <div className='flex flex row items-center'>
+            <div className='flex flex-row items-center'>
               <Image
                 src={charisma}
                 alt='charisma'

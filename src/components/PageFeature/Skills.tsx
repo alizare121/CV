@@ -1,6 +1,5 @@
 import { PageInterface } from '@enums';
-export function Skills({ messages }: PageInterface) {
-
+export default function Skills({ messages }: PageInterface) {
   const badges = [
     {
       src: 'https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E',

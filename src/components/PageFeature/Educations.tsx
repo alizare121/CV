@@ -3,7 +3,7 @@ import { PageInterface } from '@enums';
 import azad from '../../assets/images/azad.png';
 import amol from '../../assets/images/amol.png';
 import beh from '../../assets/images/beh.png';
-export function Educations({ messages }: PageInterface) {
+export default function Educations({ messages }: PageInterface) {
   const items = [
     {
       img: azad,

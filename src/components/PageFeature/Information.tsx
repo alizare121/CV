@@ -12,7 +12,7 @@ import nextIcon from '../../assets/images/skill/next-js.svg';
 import tailwindIcon from '../../assets/images/skill/tailwind.svg';
 import reactNativeIcon from '../../assets/images/skill/react-native.png';
 
-export function Information({ messages }: PageInterface) {
+export default function Information({ messages }: PageInterface) {
   const [shuffledSkills, setShuffledSkills] = useState<any>([]);
 
   useEffect(() => {

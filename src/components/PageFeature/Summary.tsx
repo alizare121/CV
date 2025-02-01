@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { PageInterface } from '@enums';
-export function Summary({ messages }: PageInterface) {
+export default function Summary({ messages }: PageInterface) {
   return (
     <div className='mt-20 flex justify-center flex-col items-center text-center gap-4'>
       <span className='text-4xl font-bold text-yellow'>About Me</span>
