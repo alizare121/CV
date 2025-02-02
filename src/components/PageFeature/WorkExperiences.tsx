@@ -45,7 +45,7 @@ export default function WorkExperiences({ messages }: PageInterface) {
           </div>
 
           <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
-            <div className='flex flex row items-center'>
+            <div className='flex flex-row items-center'>
               <Image
                 src={tse}
                 alt='tse'
@@ -71,7 +71,7 @@ export default function WorkExperiences({ messages }: PageInterface) {
           </div>
 
           <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
-            <div className='flex flex row items-center pl-8'>
+            <div className='flex flex-row items-center pl-8'>
               <Image
                 src={banimood}
                 alt='tse'
@@ -97,7 +97,7 @@ export default function WorkExperiences({ messages }: PageInterface) {
           </div>
 
           <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
-            <div className='flex flex row items-center pl-8'>
+            <div className='flex flex-row items-center pl-8'>
               <Image
                 src={i1st}
                 alt='tse'
@@ -123,7 +123,7 @@ export default function WorkExperiences({ messages }: PageInterface) {
           </div>
 
           <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
-            <div className='flex flex row items-center pl-8'>
+            <div className='flex flex-row items-center pl-8'>
               <Image
                 src={i1st}
                 alt='tse'
@@ -148,7 +148,7 @@ export default function WorkExperiences({ messages }: PageInterface) {
           </div>
 
           <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
-            <div className='flex flex row items-center pl-8'>
+            <div className='flex flex-row items-center pl-8'>
               <Image
                 src={iNet}
                 alt='tse'

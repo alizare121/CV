@@ -14,7 +14,7 @@ export function Header() {
       <meta name='description' content={faDescription} lang='fa' />
       <meta name='description' content={enDescription} lang='en' />
       <meta name='viewport' content='width=1224' />
-      <link rel='icon' href='/dev-icon.png' />
+      <link rel='icon' href='/dev-icon.webp' />
       <link
         rel='preload'
         href='/fonts/IRANSans.ttf'

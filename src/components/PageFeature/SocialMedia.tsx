@@ -31,7 +31,7 @@ export default function SocialMedia() {
     },
   ];
   return (
-    <div className='bg-white absolute  py-2 px-4 top-40 rounded-s-2xl flex flex-row end-0'>
+    <div className='bg-white absolute py-2 px-4 top-40 rounded-s-2xl flex flex-row end-0'>
       {socialData.map(({ link, icon, id, color, title }) => {
         return (
           <a

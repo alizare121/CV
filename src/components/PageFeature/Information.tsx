@@ -54,7 +54,7 @@ export default function Information({ messages }: PageInterface) {
         {shuffledSkills.map((skill: any, index: number) => (
           <div
             key={index}
-            className='flex flex-row gap-4 skill-item bg-lightGray font-bold text-black px-6 h-16 rounded-full flex justify-center items-center absolute z-50'
+            className='flex flex-row gap-4 skill-item bg-lightGray font-bold text-black px-6 h-16 rounded-full justify-center items-center absolute z-50'
             style={{
               transform: `translateX(${skill.x}) translateY(${skill.y})`,
               animationDelay: `${index * 0.5}s`, // Stagger the animations
