@@ -36,8 +36,10 @@ export default function Educations({ messages }: PageInterface) {
         <div>
           {items.map((item, index) => (
             <div
-              key={`edu-${index}`}
-              className={'flex flex-row bg-white rounded-lg px-8 py-4 mt-3 shadow-md edu-item'}
+              key={`${item.title}`}
+              className={
+                'flex flex-row bg-white rounded-lg px-8 py-4 mt-3 shadow-md edu-item'
+              }
               style={{
                 animationDelay: `${index * 0.3}s`,
               }}

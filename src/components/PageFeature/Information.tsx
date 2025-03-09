@@ -59,7 +59,7 @@ export default function Information({ messages }: PageInterface) {
       <div className='w-full flex justify-center'>
         {shuffledSkills.map((skill: SkillType, index: number) => (
           <div
-            key={`info-${index}`}
+            key={skill.name}
             className='flex flex-row gap-4 skill-item bg-lightGray font-bold text-black px-6 h-16 rounded-full justify-center items-center absolute z-50'
             style={{
               transform: `translateX(${skill.x}) translateY(${skill.y})`,
