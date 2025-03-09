@@ -42,7 +42,7 @@ export default function SocialMedia() {
             aria-label={title}
             className='mr-1 hover:scale-110 hover:bg-indigo-500 duration-300'
           >
-            <Icon iconName={icon} className={`text-3xl ${color} `} />
+            <Icon iconName={icon} className={`text-3xl ${color}`} />
           </a>
         );
       })}
