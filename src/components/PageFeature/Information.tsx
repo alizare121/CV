@@ -21,12 +21,6 @@ type SkillType = {
 export default function Information({ messages }: PageInterface) {
   const [shuffledSkills, setShuffledSkills] = useState<SkillType[]>([]);
 
-  useEffect(() => {
-    // Shuffle skills randomly on mount
-    const shuffled: SkillType[] = [...skills].sort(() => Math.random() - 0.5);
-    setShuffledSkills(shuffled);
-  }, []);
-
   const skills: SkillType[] = [
     { name: 'JavaScript', x: '-260px', y: '120px', image: js },
     { name: 'TypeScript', x: '260px', y: '140px', image: ts },
@@ -35,6 +29,13 @@ export default function Information({ messages }: PageInterface) {
     { name: 'React Native', x: '280px', y: '360px', image: reactNativeIcon },
     { name: 'Tailwind CSS', x: '320px', y: '250px', image: tailwindIcon },
   ];
+
+  useEffect(() => {
+    // Shuffle skills randomly on mount
+    const shuffled: SkillType[] = [...skills].sort(() => Math.random() - 0.5);
+    setShuffledSkills(shuffled);
+  }, []);
+
   return (
     <div className='flex justify-center items-center flex-col'>
       <span className='text-yellow text-2xl font-bold'>
