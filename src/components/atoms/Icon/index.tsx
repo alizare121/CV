@@ -15,10 +15,11 @@ export const Icon = (props: iconInterface) => {
     onClick,
   } = props;
   return (
-    <i
+    <div
       onClick={onClick}
       role='button'
       aria-label={iconName}
+      tabIndex={0} 
       className={`icon-${iconName} icon-${iconSize} icon-${iconColor} ${className}`}
     />
   );
