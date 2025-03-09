@@ -37,6 +37,7 @@ export default function SocialMedia() {
           <a
             key={id}
             target='_blank'
+            rel='noopener noreferrer'
             href={link}
             aria-label={title}
             className='mr-1 hover:scale-110 hover:bg-indigo-500 duration-300'

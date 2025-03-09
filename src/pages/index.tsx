@@ -21,7 +21,7 @@ export default function Home({ messages }: PageInterface) {
   const router = useRouter();
 
   const onChangeLang = () => {
-    setLang?.({ locale: router.locale, document });
+    setLang?.({ locale: router.locale || '', document });
   };
 
   useEffect(onChangeLang, [router.locale]);
@@ -65,7 +65,7 @@ export default function Home({ messages }: PageInterface) {
   );
 }
 
-export async function getStaticProps({ locale }: GetStaticPropsContext) {
+export function getStaticProps({ locale }: GetStaticPropsContext) {
   const lang = locale || 'en';
 
   const filePath = path.join(

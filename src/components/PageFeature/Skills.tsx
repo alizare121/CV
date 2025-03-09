@@ -175,7 +175,7 @@ export default function Skills({ messages }: PageInterface) {
       <div className='mt-8 flex flex-wrap gap-4 justify-center'>
         {badges.map((badge, index) => (
           <img
-            key={index}
+            key={`skill-${index}`}
             src={badge.src}
             alt={badge.alt}
             className='h-[40px]'

@@ -29,7 +29,7 @@ export default function WorkExperiences({ messages }: PageInterface) {
                 <span className='text-2xl font-bold'>
                   {messages.charismaJobTitle}
                 </span>
-                <span className='bg-yellow px-4 py-1 w-fit rounded-lg '>
+                <span className='bg-yellow px-4 py-1 w-fit rounded-lg'>
                   {messages.charismaJobDate}
                 </span>
               </div>
@@ -38,13 +38,13 @@ export default function WorkExperiences({ messages }: PageInterface) {
               <ul className='list-disc ml-12'>
                 {Array.isArray(messages.charismaJobInfo) &&
                   messages.charismaJobInfo?.map((item: string) => (
-                    <li>{item}</li>
+                    <li key={item}>{item}</li>
                   ))}
               </ul>
             </div>
           </div>
 
-          <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
+          <div className='flex flex-col items-start bg-white/90 p-8 rounded-2xl col-span-6'>
             <div className='flex flex-row items-center'>
               <Image
                 src={tse}
@@ -65,12 +65,12 @@ export default function WorkExperiences({ messages }: PageInterface) {
             <div className='flex flex-col ms-2 mt-4'>
               <ul className='list-disc ml-12'>
                 {Array.isArray(messages.tseJobInfo) &&
-                  messages.tseJobInfo?.map((item: string) => <li>{item}</li>)}
+                  messages.tseJobInfo?.map((item: string) => <li key={item}>{item}</li>)}
               </ul>
             </div>
           </div>
 
-          <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
+          <div className='flex flex-col items-start bg-white/90 p-8 rounded-2xl col-span-6'>
             <div className='flex flex-row items-center pl-8'>
               <Image
                 src={banimood}
@@ -91,7 +91,7 @@ export default function WorkExperiences({ messages }: PageInterface) {
             <div className='flex flex-col ms-2 mt-4'>
               <ul className='list-disc ml-12'>
                 {Array.isArray(messages.baniJobInfo) &&
-                  messages.baniJobInfo?.map((item: string) => <li>{item}</li>)}
+                  messages.baniJobInfo?.map((item: string) => <li key={item}>{item}</li>)}
               </ul>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function WorkExperiences({ messages }: PageInterface) {
             <div className='flex flex-col ms-2 mt-4'>
               <ul className='list-disc ml-12'>
                 {Array.isArray(messages.stJobInfo) &&
-                  messages.stJobInfo?.map((item: string) => <li>{item}</li>)}
+                  messages.stJobInfo?.map((item: string) => <li key={item}>{item}</li>)}
               </ul>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function WorkExperiences({ messages }: PageInterface) {
             </div>
           </div>
 
-          <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
+          <div className='flex flex-col items-start bg-white/90 p-8 rounded-2xl col-span-6'>
             <div className='flex flex-row items-center pl-8'>
               <Image
                 src={iNet}

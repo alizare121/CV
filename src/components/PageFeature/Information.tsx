@@ -4,7 +4,6 @@ import { Button } from 'antd';
 import Link from 'next/link';
 import Image from 'next/image';
 import personal1 from '../../assets/images/1.png';
-
 import js from '../../assets/images/skill/JavaScript-logo.png';
 import ts from '../../assets/images/skill/typescript.svg';
 import reactIcon from '../../assets/images/skill/react1.png';
@@ -12,16 +11,23 @@ import nextIcon from '../../assets/images/skill/next-js.svg';
 import tailwindIcon from '../../assets/images/skill/tailwind.svg';
 import reactNativeIcon from '../../assets/images/skill/react-native.png';
 
+type SkillType = {
+  name: string;
+  x: string;
+  y: string;
+  image: string;
+};
+
 export default function Information({ messages }: PageInterface) {
-  const [shuffledSkills, setShuffledSkills] = useState<any>([]);
+  const [shuffledSkills, setShuffledSkills] = useState<SkillType[]>([]);
 
   useEffect(() => {
     // Shuffle skills randomly on mount
-    const shuffled: any = [...skills].sort(() => Math.random() - 0.5);
+    const shuffled: SkillType[] = [...skills].sort(() => Math.random() - 0.5);
     setShuffledSkills(shuffled);
   }, []);
 
-  const skills = [
+  const skills: SkillType[] = [
     { name: 'JavaScript', x: '-260px', y: '120px', image: js },
     { name: 'TypeScript', x: '260px', y: '140px', image: ts },
     { name: 'React JS', x: '-230px', y: '220px', image: reactIcon },
@@ -51,9 +57,9 @@ export default function Information({ messages }: PageInterface) {
         </Link>
       </div>
       <div className='w-full flex justify-center'>
-        {shuffledSkills.map((skill: any, index: number) => (
+        {shuffledSkills.map((skill: SkillType, index: number) => (
           <div
-            key={index}
+            key={`info-${index}`}
             className='flex flex-row gap-4 skill-item bg-lightGray font-bold text-black px-6 h-16 rounded-full justify-center items-center absolute z-50'
             style={{
               transform: `translateX(${skill.x}) translateY(${skill.y})`,
@@ -78,9 +84,9 @@ export default function Information({ messages }: PageInterface) {
             width={400}
             height={300}
             priority
-            className={`personal-image mt-[-5.5rem]`}
+            className={'personal-image mt-[-5.5rem]'}
           />
-          <div className='custom-bg-skill  bg-yellow mb-[-50px]'></div>
+          <div className='custom-bg-skill bg-yellow mb-[-50px]' />
         </div>
       </div>
     </div>

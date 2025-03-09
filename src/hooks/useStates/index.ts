@@ -15,7 +15,7 @@ import {
 
 type Callback<T> = (value?: T) => void;
 type DispatchWithCallback<T> = (value: T, callback?: Callback<T>) => void;
-const actionReducer = (state: any, action: any) => {
+const actionReducer = <T>(state: T, action: T): T => {
   return {
     ...state,
     ...action,
@@ -37,14 +37,15 @@ export function useStates<T>(
     },
     []
   );
-
+  const typedState = state as T;
   useEffect(() => {
     if (isFirstCallbackCall.current) {
       isFirstCallbackCall.current = false;
       return;
     }
-    callbackRef.current?.(state);
+
+    callbackRef.current?.(typedState);
   }, [state]);
 
-  return [state, setState];
+  return [typedState, setState];
 }

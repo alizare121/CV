@@ -1,14 +1,17 @@
-import { createContext } from 'react';
-import { combineStates } from './combineStates';
+import { createContext, ReactNode } from 'react';
 import { LanguageWatcher } from './language/action';
+import { StoreType } from '@enums';
 
-const store: any = createContext(combineStates);
+import { initialLang } from './language/reducer';
 
-function StoreProvider({ children }: any) {
+const store = createContext<StoreType>({ ...initialLang });
+
+function StoreProvider({ children }: { children: ReactNode }) {
   const value = {
     ...LanguageWatcher(),
   };
-  return <store.Provider {...{ value }}>{children}</store.Provider>;
+
+  return <store.Provider value={value}>{children}</store.Provider>;
 }
 
 export { store, StoreProvider };

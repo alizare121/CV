@@ -1,6 +1,6 @@
-import { StoreType, ActionType } from '@enums';
+import { StoreType, ActionType, PageInterface } from '@enums';
 
-export const initialLang: StoreType = {
+export const initialLang: PageInterface = {
   messages: {},
 };
 

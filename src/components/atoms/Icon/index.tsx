@@ -16,7 +16,7 @@ export const Icon = (props: iconInterface) => {
   } = props;
   return (
     <i
-      {...{ onClick }}
+      onClick={onClick}
       className={`icon-${iconName} icon-${iconSize} icon-${iconColor} ${className}`}
     />
   );

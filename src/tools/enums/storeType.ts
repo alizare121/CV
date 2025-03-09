@@ -1,11 +1,17 @@
 export interface StoreType {
-  setLang?: ({ locale, document }: { locale?: string; document?: any }) => void;
-  messages?: TranslationsInterface;
+  setLang?: ({
+    locale,
+    document,
+  }: {
+    locale: string;
+    document: Document;
+  }) => void;
+  messages: TranslationsInterface;
 }
 
 export interface ActionType {
-  type?: string;
-  value?: any;
+  type: string;
+  value: TranslationsInterface;
 }
 
 export interface TranslationsInterface {
