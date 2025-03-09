@@ -17,6 +17,8 @@ export const Icon = (props: iconInterface) => {
   return (
     <i
       onClick={onClick}
+      role='button'
+      aria-label={iconName}
       className={`icon-${iconName} icon-${iconSize} icon-${iconColor} ${className}`}
     />
   );
