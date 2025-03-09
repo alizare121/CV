@@ -1,4 +1,4 @@
-import { useAppContext, useRouter, useEffect } from '@utils';
+import { useAppContext, useRouter, useEffect, useCallback } from '@utils';
 import {
   Summary,
   WorkExperiences,
@@ -26,9 +26,12 @@ export default function Home({ messages }: PageInterface) {
 
   useEffect(onChangeLang, [router.locale]);
 
-  const handleChange = (value: string) => {
-    router.push(router.asPath, router.asPath, { locale: value });
-  };
+  const handleChange = useCallback(
+    (value: string) => {
+      router.push(router.asPath, router.asPath, { locale: value });
+    },
+    [router]
+  );
 
   const langOptions = [
     { value: 'en', label: 'English' },
