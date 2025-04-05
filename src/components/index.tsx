@@ -39,3 +39,7 @@ export const Information = dynamic(() => import('./PageFeature/Information'), {
 export const Summary = dynamic(() => import('./PageFeature/Summary'), {
   loading: () => <p>Loading...</p>,
 });
+
+export const SoftSkills = dynamic(() => import('./PageFeature/SoftSkills'), {
+  loading: () => <p>Loading...</p>,
+});

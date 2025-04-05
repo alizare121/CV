@@ -10,6 +10,7 @@ import {
   Header,
   Select,
   Stars,
+  SoftSkills,
 } from '@components';
 import fs from 'fs';
 import path from 'path';
@@ -61,6 +62,7 @@ export default function Home({ messages }: PageInterface) {
           <WorkExperiences messages={messages} />
           <Skills messages={messages} />
           <Educations messages={messages} />
+          <SoftSkills messages={messages} />
           <AboutMe messages={messages} />
         </section>
       </main>
