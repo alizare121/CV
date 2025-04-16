@@ -4,38 +4,47 @@ export default function SoftSkills({ messages }: PageInterface) {
     {
       label: messages.problemSolving,
       color: '#00c4b3',
+      textColor: '#181818',
     },
     {
       label: messages.criticalThinking,
       color: '#e15b4a',
+      textColor: '#181818',
     },
     {
       label: messages.communication,
       color: '#563d7c',
+      textColor: '#ffffff',
     },
     {
       label: messages.leadership,
       color: '#0db7ed',
+      textColor: '#181818',
     },
     {
       label: messages.selfLearning,
       color: '#ff4081',
+      textColor: '#181818',
     },
     {
       label: messages.accountability,
       color: '#ff6f00',
+      textColor: '#181818',
     },
     {
       label: messages.adaptability,
       color: '#f35f5f',
+      textColor: '#181818',
     },
     {
       label: messages.mentoring,
       color: '#ec5990',
+      textColor: '#181818',
     },
     {
       label: messages.flexibility,
       color: '#ca4245',
+      textColor: '#ffffff',
     },
   ];
 
@@ -50,10 +59,12 @@ export default function SoftSkills({ messages }: PageInterface) {
         {softSkills.map((badge) => (
           <div
             key={`${badge.label}`}
-            style={{ backgroundColor: badge.color }}
+            style={{
+              backgroundColor: badge.color,
+            }}
             className='py-3 px-8 text-white text-xl font-medium'
           >
-            <span>{badge.label}</span>
+            <span style={{ color: badge.textColor }}>{badge.label}</span>
           </div>
         ))}
       </div>
