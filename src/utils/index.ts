@@ -1,4 +1,4 @@
-export { useAppContext } from '../../hooks/useAppContext';
+export { useAppContext } from '../hooks/useAppContext';
 export { useRouter } from 'next/router';
 export {
   useReducer,

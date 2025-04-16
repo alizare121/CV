@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { PageInterface } from '@enums';
+import { PageInterface } from '@types';
 import azad from '../../assets/images/azad.png';
 import amol from '../../assets/images/amol.png';
 import beh from '../../assets/images/beh.png';

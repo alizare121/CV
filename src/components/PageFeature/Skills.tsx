@@ -1,4 +1,4 @@
-import { PageInterface } from '@enums';
+import { PageInterface } from '@types';
 export default function Skills({ messages }: PageInterface) {
   const badges = [
     {

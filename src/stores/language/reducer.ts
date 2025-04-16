@@ -1,4 +1,4 @@
-import { StoreType, ActionType, PageInterface } from '@enums';
+import { StoreType, ActionType, PageInterface } from 'src/types';
 
 export const initialLang: PageInterface = {
   messages: {},

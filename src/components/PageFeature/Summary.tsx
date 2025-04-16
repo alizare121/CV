@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { PageInterface } from '@enums';
+import { PageInterface } from '@types';
 export default function Summary({ messages }: PageInterface) {
   return (
     <div className='mt-20 flex justify-center flex-col items-center text-center gap-4'>

@@ -14,7 +14,7 @@ import {
 } from '@components';
 import fs from 'fs';
 import path from 'path';
-import { PageInterface } from '@enums';
+import { PageInterface } from '@types';
 import { GetStaticPropsContext } from 'next';
 
 export default function Home({ messages }: PageInterface) {

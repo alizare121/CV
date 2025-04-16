@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import { StoreProvider } from '../storage';
+import { StoreProvider } from '../stores';
 import '../assets/icon/css/aliiz.css';
 import '../styles/globals.scss';
 import 'tailwindcss/tailwind.css';

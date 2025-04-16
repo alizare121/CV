@@ -1,6 +1,6 @@
 import { createContext, ReactNode } from 'react';
 import { LanguageWatcher } from './language/action';
-import { StoreType } from '@enums';
+import { StoreType } from 'src/types';
 
 import { initialLang } from './language/reducer';
 

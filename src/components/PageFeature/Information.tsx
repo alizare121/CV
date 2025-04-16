@@ -1,5 +1,5 @@
 import { useEffect, useState } from '@utils';
-import { PageInterface } from '@enums';
+import { PageInterface } from '@types';
 import { Button } from 'antd';
 import Link from 'next/link';
 import Image from 'next/image';

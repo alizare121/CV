@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { store } from '../../storage';
-import { StoreType } from '@enums';
+import { store } from '../../stores';
+import { StoreType } from 'src/types';
 
 export const useAppContext = (): StoreType => {
   return useContext<StoreType>(store);

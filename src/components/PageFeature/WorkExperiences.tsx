@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
-import { PageInterface } from '@enums';
+import { PageInterface } from '@types';
 import tse from '../../assets/images/tse.png';
 import banimood from '../../assets/images/banimode.jpeg';
 import i1st from '../../assets/images/1st.jpeg';

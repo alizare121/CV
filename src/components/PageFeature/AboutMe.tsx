@@ -1,4 +1,4 @@
-import { PageInterface } from '@enums';
+import { PageInterface } from '@types';
 export default function AboutMe({ messages }: PageInterface) {
   return (
     <div className='flex flex-row mt-14 px-10 items-center justify-center bg-darkGray rounded-2xl '>

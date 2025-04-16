@@ -1,4 +1,4 @@
-import { PageInterface } from '@enums';
+import { PageInterface } from '@types';
 export default function SoftSkills({ messages }: PageInterface) {
   const softSkills = [
     {
@@ -47,9 +47,9 @@ export default function SoftSkills({ messages }: PageInterface) {
         </h3>
       </div>
       <div className='mt-8 flex flex-wrap gap-6 justify-center'>
-        {softSkills.map((badge, i) => (
+        {softSkills.map((badge) => (
           <div
-            key={`${badge.label}${i}`}
+            key={`${badge.label}`}
             style={{ backgroundColor: badge.color }}
             className='py-3 px-8 text-white text-xl font-medium'
           >
