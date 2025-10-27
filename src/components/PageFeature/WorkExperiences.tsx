@@ -1,10 +1,10 @@
-import Image, { StaticImageData } from 'next/image';
-import { PageInterface } from '@types';
-import tse from '../../assets/images/tse.png';
-import banimood from '../../assets/images/banimode.jpeg';
-import i1st from '../../assets/images/1st.jpeg';
-import iNet from '../../assets/images/inet.png';
-import charisma from '../../assets/images/charisma.jpeg';
+import Image, { StaticImageData } from "next/image";
+import { PageInterface } from "@types";
+import tse from "../../assets/images/tse.png";
+import banimood from "../../assets/images/banimode.jpeg";
+import i1st from "../../assets/images/1st.jpeg";
+import iNet from "../../assets/images/inet.png";
+import charisma from "../../assets/images/charisma.jpeg";
 
 interface JobProps {
   index: number;
@@ -23,24 +23,24 @@ const JobCard: React.FC<JobProps> = ({
 }) => {
   const isArrayJobInfo = Array.isArray(jobInfo);
   return (
-    <div className='flex flex-col items-start bg-white p-8 rounded-2xl col-span-6'>
-      <div className='flex flex-row items-center'>
+    <div className="flex flex-col items-start bg-white p-8 rounded-2xl col-span-6">
+      <div className="flex flex-row items-center">
         <Image
           src={icon}
           alt={`${jobTitle}`}
           width={index === 1 ? 70 : 90}
           height={index === 1 ? 40 : 50}
-          className='object-contain me-4'
+          className="object-contain me-4"
         />
-        <div className='flex flex-col gap-2'>
-          <span className='text-2xl font-bold'>{jobTitle}</span>
-          <span className='bg-yellow px-4 py-1 w-fit rounded-lg '>
+        <div className="flex flex-col gap-2">
+          <span className="text-2xl font-bold">{jobTitle}</span>
+          <span className="bg-yellow px-4 py-1 w-fit rounded-lg ">
             {jobDate}
           </span>
         </div>
       </div>
-      <div className='flex flex-col ms-2 mt-4'>
-        <ul className='list-disc ml-12'>
+      <div className="flex flex-col ms-2 mt-4">
+        <ul className="list-disc ml-12">
           {isArrayJobInfo ? (
             jobInfo?.map((item: string) => <li key={item}>{item}</li>)
           ) : (
@@ -92,15 +92,15 @@ export default function WorkExperiences({ messages }: PageInterface) {
     },
   ];
   return (
-    <div className='flex flex-col w-full mt-12 items-center justify-center'>
-      <h2 className='text-4xl text-yellow font-bold'>
+    <div className="flex flex-col w-full mt-12 items-center justify-center">
+      <h2 className="text-4xl text-yellow font-bold">
         {messages.workExperiences}
       </h2>
-      <div className='flex flex-col items-center justify-center w-full'>
-        <span className='text-white'>{messages.workSummeryInfo}</span>
+      <div className="flex flex-col items-center justify-center w-full">
+        <span className="text-white">{messages.workSummeryInfo}</span>
       </div>
-      <div className='flex flex-col w-full mt-6'>
-        <div className='grid grid-cols-12 gap-4'>
+      <div className="flex flex-col w-full mt-6">
+        <div className="grid grid-cols-12 gap-4">
           {jobData.map((job, index) => (
             <JobCard
               index={index}

@@ -11,6 +11,7 @@ import {
   Select,
   Stars,
   SoftSkills,
+  WhyProgramming,
 } from "@components";
 import fs from "fs";
 import path from "path";
@@ -64,6 +65,7 @@ export default function Home({ messages, badges }: HomePageInterface) {
           <Skills messages={messages} badges={badges} />
           <Educations messages={messages} />
           <SoftSkills messages={messages} />
+          <WhyProgramming messages={messages} />
           <AboutMe messages={messages} />
         </section>
       </main>

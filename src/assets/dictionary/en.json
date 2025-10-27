@@ -45,6 +45,7 @@
   "bachelorDate": "2012 - 2014 , Mazandaran, Amol",
   "associateTitle": "Associate - Technical Institute Of Behshahr - Imam Khomeini",
   "associateDate": "2009 - 2012 , Mazandaran, Behshahr",
+  "aboutTitle": "Beyond the Code",
   "about": "I love adventure. So far, I have experienced the theater and paraglider flight for fun. But I would like to start flying professionally in the future. And I also like jumping and crazy games at heights. Indeed, I love nature, forest climbing, mountain, sea, etc., because nature gives me peace. My free time is also busy with the above, watching movies, playing games (for example, karting, bowling, paintball, etc.). And that I am very interested in learning about self-knowledge and philosophy and I am trying for my personal development.",
   "stNetJobTitle": "Network Engineer at First Eurasia E-Commerce",
   "stNetJobDate": "JUL 2017 - JUL 2018",
@@ -64,5 +65,7 @@
   "call": "Call Me",
   "cv": "Get CV",
   "summary": "Skilled frontend developer with over 7 years of experience specializing in JavaScript, TypeScript, and modern frameworks like React and Next.js. Experienced in enhancing code quality and driving technical transformations across multiple projects. Demonstrated ability to lead front-end architecture redesigns and performance optimizations to support business growth. Known for creating intuitive, high-performance UIs and leading cross-functional teams to achieve significant results. Proven record of enhancing UX and optimizing performance, with a deep commitment to continuous learning and delivering high-quality, scalable solutions.",
-  "aboutMe": "About Me"
+  "aboutMe": "About Me",
+  "whyProgrammingTitle": "Why Programming?",
+  "whyProgrammingText": "I’ve been fascinated by computers since my teenage years. That passion led me to choose a technical high school, where I studied Computer Science — a path I continued all the way to my master’s degree. My first programming experience was with Visual Basic, back in high school — I still remember delivering my first project on a floppy disk and a CD! I started with small tasks like reinstalling Windows and assembling PCs, then moved on to more technical areas like networking. Eventually, I found my way back to what I truly love: programming. I’ve never been a math genius, so I tend to solve problems in simple and practical ways — I’ve never had a good relationship with unnecessary complexity. I love building things and finding creative solutions. There’s something deeply satisfying about seeing something come to life from nothing. Today, after years of real-world experience, programming for me is more than just a job it’s a way of thinking — a blend of logic, creativity, and patience."
 }

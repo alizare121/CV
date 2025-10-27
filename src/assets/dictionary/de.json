@@ -45,6 +45,7 @@
   "bachelorDate": "2012 - 2014 , Mazandaran, Amol",
   "associateTitle": "Assoziierter Abschluss - Technisches Institut von Behshahr - Imam Khomeini",
   "associateDate": "2009 - 2012 , Mazandaran, Behshahr",
+  "aboutTitle": "Jenseits des Codes",
   "about": "Ich liebe Abenteuer. Bisher habe ich das Theater und Gleitschirmfliegen zum Spaß erlebt. Aber ich möchte in Zukunft professionell fliegen. Ich mag auch Sprünge und verrückte Spiele in großen Höhen. In der Tat liebe ich die Natur, Waldklettern, Berge, Meer usw., weil die Natur mir Frieden gibt. In meiner Freizeit beschäftige ich mich auch mit den oben genannten Aktivitäten, schaue Filme, spiele Spiele (z. B. Kartfahren, Bowling, Paintball usw.). Ich interessiere mich sehr für Selbsterkenntnis und Philosophie und bemühe mich um meine persönliche Entwicklung.",
   "stNetJobTitle": "Netzwerkingenieur bei First Eurasia E-Commerce",
   "stNetJobDate": "JUL 2017 - JUL 2018",
@@ -64,5 +65,7 @@
   "call": "Anruf mich",
   "cv": "Lebenslauf erhalten",
   "summary": "Qualifizierter Frontend-Entwickler mit über 7 Jahren Erfahrung und Spezialisierung auf JavaScript, TypeScript und moderne Frameworks wie React und Next.js. Erfahrung in der Verbesserung der Codequalität und Förderung technischer Transformationen in verschiedenen Projekten. Nachweisliche Fähigkeit, Frontend-Architekturen neu zu gestalten und Leistungsoptimierungen zur Unterstützung des Geschäftswachstums durchzuführen. Bekannt für die Erstellung intuitiver, leistungsstarker UIs und die Leitung funktionsübergreifender Teams zur Erzielung bedeutender Ergebnisse. Nachgewiesene Erfolge bei der Verbesserung der Benutzerfreundlichkeit und Optimierung der Leistung, mit einem starken Engagement für kontinuierliches Lernen und die Bereitstellung hochwertiger, skalierbarer Lösungen.",
-  "aboutMe": "Über Mich"
+  "aboutMe": "Über Mich",
+  "whyProgrammingTitle": "Warum Programmieren?",
+  "whyProgrammingText": "Schon als Teenager war ich von Computern fasziniert. Diese Leidenschaft führte mich dazu, eine technische Schule zu besuchen und Informatik zu studieren – ein Weg, den ich bis zum Masterabschluss fortgesetzt habe. Meine erste Programmiererfahrung machte ich mit Visual Basic in der Schulzeit – ich erinnere mich noch gut daran, wie ich mein erstes Projekt auf einer Diskette und einer CD abgegeben habe! Ich begann mit kleinen Aufgaben wie dem Installieren von Windows oder dem Zusammenbauen von PCs und arbeitete mich später in technischere Bereiche wie Netzwerke ein. Schließlich kehrte ich zu dem zurück, was ich wirklich liebe: Programmieren. Ich war nie ein Mathe-Genie, deshalb löse ich Probleme lieber einfach und praxisorientiert – mit unnötiger Komplexität konnte ich mich noch nie anfreunden.  Ich liebe es, Dinge zu erschaffen und kreative Lösungen zu finden. Es gibt kaum etwas Schöneres, als zu sehen, wie aus dem Nichts etwas entsteht. Heute, nach vielen Jahren praktischer Erfahrung, ist Programmieren für mich mehr als nur ein Beruf – es ist eine Denkweise – eine Mischung aus Logik, Kreativität und Geduld."
 }
