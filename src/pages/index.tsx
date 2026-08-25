@@ -12,14 +12,21 @@ import {
   Stars,
   SoftSkills,
   WhyProgramming,
+  AIAgent,
 } from "@components";
 import fs from "fs";
 import path from "path";
 import { PageInterface, SkillsInterface } from "@types";
 import { GetStaticPropsContext } from "next";
 
-interface HomePageInterface extends PageInterface, SkillsInterface {}
-export default function Home({ messages, badges }: HomePageInterface) {
+interface HomePageInterface extends PageInterface, SkillsInterface {
+  aiAgents: any;
+}
+export default function Home({
+  messages,
+  badges,
+  aiAgents,
+}: HomePageInterface) {
   const { setLang } = useAppContext();
   const router = useRouter();
 
@@ -33,7 +40,7 @@ export default function Home({ messages, badges }: HomePageInterface) {
     (value: string) => {
       router.push(router.asPath, router.asPath, { locale: value });
     },
-    [router]
+    [router],
   );
 
   const langOptions = [
@@ -63,6 +70,8 @@ export default function Home({ messages, badges }: HomePageInterface) {
           <Summary messages={messages} />
           <WorkExperiences messages={messages} />
           <Skills messages={messages} badges={badges} />
+           <Skills messages={messages} badges={aiAgents} />
+          {/* <AIAgent messages={messages} aiAgents={aiAgents} /> */}
           <Educations messages={messages} />
           <SoftSkills messages={messages} />
           <WhyProgramming messages={messages} />
@@ -81,7 +90,7 @@ export function getStaticProps({ locale }: GetStaticPropsContext) {
     "src",
     "assets",
     "dictionary",
-    `${lang}.json`
+    `${lang}.json`,
   );
 
   const jsonData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
@@ -261,10 +270,59 @@ export function getStaticProps({ locale }: GetStaticPropsContext) {
     },
   ];
 
+  const aiAgents = [
+  {
+    src: "https://img.shields.io/badge/ChatGPT-%23000000.svg?style=for-the-badge&logo=openai&logoColor=white",
+    alt: "ChatGPT",
+  },
+  {
+    src: "https://img.shields.io/badge/Gemini-%2320282E.svg?style=for-the-badge&logo=google&logoColor=white",
+    alt: "Gemini AI",
+  },
+  {
+    src: "https://img.shields.io/badge/Cursor-%2320282E.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white",
+    alt: "Cursor AI Editor",
+  },
+  {
+    src: "https://img.shields.io/badge/LM_Studio-%2320282E.svg?style=for-the-badge&logo=ai&logoColor=white",
+    alt: "LM Studio",
+  },
+  {
+    src: "https://img.shields.io/badge/Claude-%2320282E.svg?style=for-the-badge&logo=anthropic&logoColor=white",
+    alt: "Claude AI",
+  },
+  {
+    src: "https://img.shields.io/badge/DeepSource-%2320282E.svg?style=for-the-badge&logo=codeclimate&logoColor=white",
+    alt: "DeepSource AI",
+  },
+  {
+    src: "https://img.shields.io/badge/v0.app-%2320282E.svg?style=for-the-badge&logo=vercel&logoColor=white",
+    alt: "v0 App AI UI Generator",
+  },
+  {
+    src: "https://img.shields.io/badge/Lovable-%2320282E.svg?style=for-the-badge&logo=heart&logoColor=white",
+    alt: "Lovable AI",
+  },
+  {
+    src: "https://img.shields.io/badge/Chaton-%2320282E.svg?style=for-the-badge&logo=chatbot&logoColor=white",
+    alt: "Chaton AI",
+  },
+  {
+    src: "https://img.shields.io/badge/OpenClaw-%2320282E.svg?style=for-the-badge&logo=robotframework&logoColor=white",
+    alt: "OpenClaw AI Agent",
+  },
+  {
+    src: "https://img.shields.io/badge/AI_Studio-%2320282E.svg?style=for-the-badge&logo=google&logoColor=white",
+    alt: "Google AI Studio",
+  }
+]
+
+
   return {
     props: {
       messages: jsonData,
       badges,
+      aiAgents,
     },
   };
 }

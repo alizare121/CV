@@ -13,13 +13,14 @@ export { Image, Link };
 export { Icon } from "./atoms/Icon";
 export { Header } from "./atoms/Header";
 export { Stars } from "./atoms/Stars";
+export { SvgIcon } from "./atoms/SvgIcon";
 
 // page feature
 export const WorkExperiences = dynamic(
   () => import("./PageFeature/WorkExperiences"),
   {
     loading: () => <p>Loading...</p>,
-  }
+  },
 );
 export const Skills = dynamic(() => import("./PageFeature/Skills"), {
   loading: () => <p>Loading...</p>,
@@ -48,5 +49,9 @@ export const WhyProgramming = dynamic(
   () => import("./PageFeature/WhyProgramming"),
   {
     loading: () => <p>Loading...</p>,
-  }
+  },
 );
+
+export const AIAgent = dynamic(() => import("./PageFeature/AIAgent"), {
+  loading: () => <p>Loading...</p>,
+});
